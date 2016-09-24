@@ -17,6 +17,10 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+#sublime projects
+*.sublime-project
+*.sublime-workspace
+
 # =========================
 # Operating System Files
 # =========================
@@ -38,8 +42,7 @@ $RECYCLE.BIN/
 .TemporaryItems
 .Trashes
 .VolumeIcon.icns
-.sublime-project
-.sublime-workspace
+
 
 # Directories potentially created on remote AFP share
 .AppleDB
