@@ -295,7 +295,7 @@
 			"file": "site-portfolio/index.html",
 			"settings":
 			{
-				"buffer_size": 112,
+				"buffer_size": 3209,
 				"line_ending": "Windows"
 			}
 		}
@@ -365,15 +365,7 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Альберт/Desktop/Курсы/loft/site-portfolio",
-		"/C/Users/Альберт/Desktop/Курсы/loft/site-portfolio/css",
-		"/C/Users/Альберт/Desktop/Курсы/loft/site-portfolio/css/layout",
-		"/C/Users/Альберт/Desktop/Курсы/loft/site-portfolio/css/sections",
-		"/C/Users/Альберт/Desktop/Курсы/loft/site-portfolio/fonts",
-		"/C/Users/Альберт/Desktop/Курсы/loft/site-portfolio/fonts/FiraSans",
-		"/C/Users/Альберт/Desktop/Курсы/loft/site-portfolio/fonts/FontAwesome",
-		"/C/Users/Альберт/Desktop/Курсы/loft/site-portfolio/img",
-		"/C/Users/Альберт/Desktop/Курсы/loft/site-portfolio/img/bg"
+		"/C/Users/Альберт/Desktop/Курсы/loftschool-portfolio/loft/site-portfolio"
 	],
 	"file_history":
 	[
@@ -527,15 +519,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 112,
+						"buffer_size": 3209,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								112,
-								112
+								1405,
+								1405
 							]
 						],
 						"settings":
