@@ -1,0 +1,24 @@
+@font-face {
+	font-family: 'firasans_regular';
+	src:url(../../fonts/FiraSans/FiraSans-Regular.ttf);
+	font-weight: normal;
+  	font-style: normal;
+}
+@font-face {
+	font-family: 'firasans_medium';
+	src:url(../../fonts/FiraSans/FiraSans-medium.ttf);
+	font-weight: normal;
+  	font-style: normal;
+}
+@font-face {
+	font-family: 'firasans_bold';
+	src:url(../../fonts/FiraSans/FiraSans-bold.ttf);
+	font-weight: normal;
+  	font-style: normal;
+}
+@font-face {
+	font-family: 'firasans_light';
+	src:url(../../fonts/FiraSans/FiraSans-light.ttf);
+	font-weight: normal;
+ 	 font-style: normal;
+}

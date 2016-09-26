@@ -1,0 +1,51 @@
+.about__left {
+	float: left;
+	width: 42%;
+	text-align: center;
+}
+.about__right {
+	float: right;
+	width: 54%;
+}
+.about__img {
+	display: inline-block;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	overflow: hidden;
+}
+.about__photo {
+	display: block;
+}
+.about__text {
+	color: #646464;
+    font-size: 18px;
+    line-height: 26px;
+    height: 320px;
+    overflow: auto;
+    margin-bottom: 60px;
+}
+.about__text p {
+	margin: 0;
+	margin-bottom: 15px;
+}
+.about__download {	
+	text-align: right;	
+}
+.about__download-link {
+	color: #e85f61;
+	border: 2px solid;
+	border-radius:40px;
+	padding: 4px 10px;
+	font-family: 'firasans_bold';
+	font-size: 14px;
+	line-height: 28px;
+	display: inline-block;	
+}
+.about__download-link:hover {
+	color: #FFF;
+	border-color: #e85f61;
+	background-color: #e85f61
+}
+.about__download-text {
+	margin-left: 8px;
+}
