@@ -3,6 +3,8 @@
 	width: 74%;
 }
 .heading {
-	font:35px/45px 'firasans_medium';
+	font:35px/45px 'Fira Sans';
+	font-weight: 500;
 	margin-bottom: 16px;
+
 }
