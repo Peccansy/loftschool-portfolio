@@ -1,7 +1,7 @@
 .header {
 	background-color: #fff;
 	height: 80px;
-	margin-bottom: 20px;	
+	margin-bottom: 25px;	
 	-webkit-box-shadow: 1px 0 3px rgba(0,0,0,.2);
 	box-shadow: 1px 0 3px rgba(0,0,0,.2);
 }
@@ -13,7 +13,7 @@
 	text-align: right;
 }
 .user {
-	margin-top: 10px;
+	margin-top: 8px;
 }
 .user__avatar, .user__name {
 	display: inline-block;
@@ -28,11 +28,12 @@
 	display: block;
 }
 .user__name {
-	margin-left: 20px;
+	margin-left: 12px;
+	margin-top: 2px;
 	max-width: 240px;
 }
 .contacts {
-	margin-top: 32px;	
+	margin-top: 28px;	
 }
 .contacts__trigger {
 	display: inline-block;
@@ -40,4 +41,9 @@
 	font-size: 18px;
 	line-height: 28px;
 	background: url('../../img/decor/header-border.png') repeat-x bottom;
+	font-weight: 500;
+}
+.contacts__trigger:hover {
+	color: #e85f61;
+	background: url('../../img/decor/header-border-hover.png') repeat-x bottom;
 }

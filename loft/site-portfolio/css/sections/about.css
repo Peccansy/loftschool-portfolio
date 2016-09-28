@@ -5,13 +5,13 @@
 }
 .about__right {
 	float: right;
-	width: 54%;
+	width: 54.7%;
 }
 .about__img {
 	display: inline-block;
 	border-radius: 50%;
 	border: 5px solid #fff;
-	overflow: hidden;
+	overflow: hidden;	
 }
 .about__photo {
 	display: block;
@@ -22,11 +22,11 @@
     line-height: 26px;
     height: 320px;
     overflow: auto;
-    margin-bottom: 60px;
+    margin-bottom: 57px;
 }
 .about__text p {
 	margin: 0;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 .about__download {	
 	text-align: right;	
@@ -35,7 +35,7 @@
 	color: #e85f61;
 	border: 2px solid;
 	border-radius:40px;
-	padding: 4px 10px;
+	padding: 4px 12px;
 	font-family: 'Fira Sans';
 	font-size: 14px;
 	line-height: 28px;
@@ -48,5 +48,6 @@
 	background-color: #e85f61
 }
 .about__download-text {
-	margin-left: 8px;
+	margin-left: 10px;
+    letter-spacing: 1px;
 }
