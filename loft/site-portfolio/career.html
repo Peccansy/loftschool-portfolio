@@ -2,6 +2,8 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 	<title>Portfolio</title>
 	<!-- STYLES -->
 	<link rel="stylesheet" href="css/layout/normalize.css">
@@ -12,10 +14,13 @@
 	<link rel="stylesheet" href="css/sections/header.css">
 	<link rel="stylesheet" href="css/sections/sidebar.css">
 	<link rel="stylesheet" href="css/sections/content.css">
-	<link rel="stylesheet" href="css/sections/about.css">
+	<link rel="stylesheet" href="css/sections/career.css">
 	<link rel="stylesheet" href="css/sections/footer.css">
 </head>
 <body>
+<!--[if lte IE 9]
+	<p>К сожалению, ваш браузер устарел! Пожалуста, <a href="http://browsehappy.com/">обновите</a> ваш браузер!</p>
+	<![endif] -->
 	<div class="wrapper">
 		<div class="main-content">
 			<!-- HEADER -->
@@ -49,15 +54,87 @@
 					<aside class="sidebar">
 						<nav class="nav">
 							<ul class="nav__list">
-								<li class="nav__item"><a href="about.html" class="nav__link"><i class="fa fa-user-secret" aria-hidden="true"></i><span class="nav__text">Обо мне</span></a></li>
-								<li class="nav__item nav__item_active"><a href="career.html" class="nav__link"><i class="fa fa-rocket" aria-hidden="true"></i><span class="nav__text">Карьерный путь</span></a></li>
-								<li class="nav__item"><a href="portfolio.html" class="nav__link"><i class="fa fa-briefcase" aria-hidden="true"></i><span class="nav__text">Портфолио</span></a></li>
+								<li class="nav__item"><a href="about.html" class="nav__link">
+									<i class="fa fa-user-secret" aria-hidden="true"></i>
+									<span class="nav__text">Обо мне</span>
+								</a>
+							</li>
+							<li class="nav__item nav__item_active">
+								<a href="career.html" class="nav__link">
+									<i class="fa fa-rocket" aria-hidden="true"></i>
+									<span class="nav__text">Карьерный путь</span></a>
+								</li>
+								<li class="nav__item">
+									<a href="portfolio.html" class="nav__link">
+										<i class="fa fa-briefcase" aria-hidden="true"></i>
+										<span class="nav__text">Портфолио</span>
+									</a>
+								</li>
 							</ul>
 						</nav>
 					</aside>
 					<!-- MAIN CONTENT -->							
 					<main class="main">
-						<h1 class="heading">Work In Progress</h1>
+						<div class="career">
+							<h1 class="heading">Карьерный путь</h1>
+							<div class="career__left">
+								<div class="career__img">
+									<img src="img/content/career.jpg" alt="ВУЗ" class="career__photo">
+								</div>
+							</div>
+							<div class="career__right">
+								<ul class="career__list">
+									<li class="career__item">
+										<div class="career__element">
+											<div class="career__title">
+												SMS Online
+											</div>
+											<div class="career__position">
+												Администратор Web-сайтов
+											</div>
+											<div class="career__period">
+												2016 - по настоящее время
+											</div>
+											<div class="career__year">
+												2016
+											</div>
+										</div>
+									</li>
+									<li class="career__item">
+										<div class="career__element">
+											<div class="career__title">
+												SMS Online
+											</div>
+											<div class="career__position">
+												Администратор Web-сайтов
+											</div>
+											<div class="career__period">
+												2016 - по настоящее время
+											</div>
+											<div class="career__year">
+												2016
+											</div>
+										</div>
+									</li>
+									<li class="career__item">
+										<div class="career__element">
+											<div class="career__title">
+												SMS Online
+											</div>
+											<div class="career__position">
+												Администратор Web-сайтов
+											</div>
+											<div class="career__period">
+												2016 - по настоящее время
+											</div>
+											<div class="career__year">
+												2016
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</main>
 				</div>			
 			</section>			

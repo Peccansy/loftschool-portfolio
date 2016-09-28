@@ -10,6 +10,11 @@ body,html {
 	overflow: hidden;
 	min-width: 960px;
 }
+.wrapper:after {
+	content: '';
+	display: block;
+	height: 50px;
+}
 .main-content {
 	padding-bottom: 72px;
 }
