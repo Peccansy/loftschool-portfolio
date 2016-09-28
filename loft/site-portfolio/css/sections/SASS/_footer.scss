@@ -1,0 +1,54 @@
+.footer {
+	background-color: #414141;
+	height: 50px;
+	margin-top: -50px;	
+}
+.footer__right,.footer__left {
+	width: 50%;
+	float: left;
+}
+.footer__copyright {	
+	font-size: 14px;
+	line-height: 50px;
+	color: #9c9c9c;
+	margin: 0;
+	font-weight: 200;
+}
+.social {
+	text-align: right;
+	margin: 5px 0;
+
+	.social__item {
+		display: inline-block;
+		vertical-align: middle;	
+	}
+	.social__item {
+		display: inline-block;
+		vertical-align: middle;	
+	}
+	.social__link {	
+		width: 33px;
+		height: 40px;
+		display: block;	
+	}
+	.social__item:first-child .social__link{
+		background: url('../../img/icons/social/FaceBook-disable.svg') no-repeat center;
+	}
+	.social__item:nth-child(2) .social__link{
+		background: url('../../img/icons/social/vk-disbale.svg') no-repeat center;
+	}
+	.social__item:last-child .social__link{
+		background: url('../../img/icons/social/Twitter-disable.svg') no-repeat center;
+	}
+	.social__item:first-child:hover .social__link{
+		background: url('../../img/icons/social/FaceBook.svg') no-repeat center;
+	}
+	.social__item:nth-child(2):hover .social__link{
+		background: url('../../img/icons/social/vk.svg') no-repeat center;
+	}
+	.social__item:last-child:hover .social__link{
+		background: url('../../img/icons/social/Twitter.svg') no-repeat center;
+	}
+}
+
+
