@@ -1,0 +1,57 @@
+.about {
+	@extend %clearfix;
+}
+.about__left {
+	float: left;
+	width: 42%;
+	text-align: center;
+}
+.about__right {
+	float: right;
+	width: 54.7%;
+}
+.about__img {
+	display: inline-block;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	overflow: hidden;	
+}
+.about__photo {
+	display: block;
+}
+.about__text {
+	color: #646464;
+    font-size: 18px;
+    line-height: 26px;
+    height: 320px;
+    overflow: auto;
+    margin-bottom: 57px;
+}
+.about__text p {
+	margin: 0;
+	margin-bottom: 10px;
+}
+.about__download {	
+	text-align: right;	
+}
+.about__download-link {
+	color: $hover-alternative;
+	border: 2px solid;
+	border-radius:40px;
+	padding: 4px 12px;
+	font-family: 'Fira Sans';
+	font-size: 14px;
+	line-height: 28px;
+	display: inline-block;
+	font-weight: 700;
+
+	&:hover {
+		color: #FFF;
+		border-color: $hover-alternative;
+		background-color: $hover-alternative;
+	}	
+}
+.about__download-text {
+	margin-left: 10px;
+    letter-spacing: 1px;
+}

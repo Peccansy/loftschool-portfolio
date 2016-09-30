@@ -1,0 +1,15 @@
+// VARIABLES
+$hover-color: #33c1e3;
+$hover-alternative: #e85f61;
+	
+//LAYOUT
+@import 'layout/SASS/fonts';
+@import 'layout/SASS/adjusment';
+@import 'layout/SASS/mixins';
+// SECTIONS
+@import 'sections/SASS/header';
+@import 'sections/SASS/footer';
+@import 'sections/SASS/sidebar';
+@import 'sections/SASS/content';
+@import 'sections/SASS/about';
+@import 'sections/SASS/career';

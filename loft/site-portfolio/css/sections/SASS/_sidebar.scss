@@ -1,29 +1,26 @@
 .sidebar {
 	float: left;
 	width: 23%;
-
-	.nav__list {
-		text-align: right;	
-	}
-	.nav__link {
-		display: block;
-		color: #414141;
-		line-height: 24px;
-		padding: 11px 23px 10px 0;
-		border-right: 6px solid transparent;
-		margin-right: -4px;	
-	}
-	.nav__item_active .nav__link{
-		border-right-color: #33c1e3;
-		color: #33c1e3;	
-	}
-	.nav__text {
-		margin-left: 10px;
-	}
-	.nav__item:hover .nav__link{
-		color: #33c1e3;
-	}
 }
-
-
+.nav__list {
+	text-align: right;	
+}
+.nav__link {
+	display: block;
+	color: #414141;
+	line-height: 24px;
+	padding: 11px 23px 10px 0;
+	border-right: 6px solid transparent;
+	margin-right: -4px;	
+}
+.nav__item_active .nav__link{
+	border-right-color: $hover-color;
+	color: $hover-color;	
+}
+.nav__text {
+	margin-left: 10px;
+}
+.nav__item:hover .nav__link{
+	color: $hover-color;
+}
 

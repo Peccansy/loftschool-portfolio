@@ -6,21 +6,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 	<title>Portfolio</title>
 	<!-- STYLES -->
-	<link rel="stylesheet" href="css/layout/normalize.css">
-	<link rel="stylesheet" href="css/layout/fonts.css">	
-	<link rel="stylesheet" href="css/layout/font-awesome.css">
-	<link rel="stylesheet" href="css/layout/adjusment.css">
-	<!-- SECTIONS -->
-	<link rel="stylesheet" href="css/sections/header.css">
-	<link rel="stylesheet" href="css/sections/sidebar.css">
-	<link rel="stylesheet" href="css/sections/content.css">
-	<link rel="stylesheet" href="css/sections/about.css">
-	<link rel="stylesheet" href="css/sections/footer.css">
+	<link rel="stylesheet" href="css/layout/normalize.css">	
+	<link rel="stylesheet" href="css/layout/font-awesome.min.css">		
+	<link rel="stylesheet" href="css/common.min.css">	
 </head>
 <body>
 <!--[if lte IE 9]
 	<p>К сожалению, ваш браузер устарел! Пожалуста, <a href="http://browsehappy.com/">обновите</a> ваш браузер!</p>
-<![endif] -->
+	<![endif] -->
 	<div class="wrapper">
 		<div class="main-content">
 			<!-- HEADER -->
@@ -49,62 +42,76 @@
 			</header>
 			<!-- CONTENT -->
 			<section class="content">
-				<div class="container clearfix">
+				<div class="container">
 					<!-- SIDEBAR -->
 					<aside class="sidebar">
 						<nav class="nav">
 							<ul class="nav__list">
-								<li class="nav__item nav__item_active"><a href="about.html" class="nav__link"><i class="fa fa-user-secret" aria-hidden="true"></i><span class="nav__text">Обо мне</span></a></li>
-								<li class="nav__item"><a href="career.html" class="nav__link"><i class="fa fa-rocket" aria-hidden="true"></i><span class="nav__text">Карьерный путь</span></a></li>
-								<li class="nav__item"><a href="portfolio.html" class="nav__link"><i class="fa fa-briefcase" aria-hidden="true"></i><span class="nav__text">Портфолио</span></a></li>
-							</ul>
-						</nav>
-					</aside>
-					<!-- MAIN CONTENT -->							
-					<main class="main">
-						<!-- ABOUT -->
-						<div class="about clearfix">
-							<div class="about__left">
-								<div class="about__img">
-									<img class="about__photo" src="img/content/about.jpg" alt="My photo" />
-								</div>
-							</div>
-							<div class="about__right">
-								<h1 class="heading">
-									Обо мне
-								</h1>
-								<div class="about__text">
-									<p>Меня зовут Альберт. Я живу в маленьком городке в Московской области, название которого - Подольск.</p>
-									<p>Я получил степерь бакалавра по робототехнике в МТУ (ранее МГТУ МИРЭА)</p>
-									<p>Не так давно я начал увлекаться сферой web-разработки. Сейчас я работаю HTML-верстальщиком.</p>
-									<p>Моя мечта стать "гуру" frontend разработки! И эта мечта меня полностью захватила! Я стараюсь постоянно развивать свои профессиональные навыки и использовать современные и актуальные технологии для моих проектов.</p>		
-								</div>
-								<div class="about__download">
-									<a href="#nogo" class="about__download-link" download><i class="fa fa-download about__download-link-icon"></i><span class="about__download-text">Скачать резюме</span></a>	
-								</div>
+								<li class="nav__item nav__item_active">
+									<a href="about.html" class="nav__link">
+										<i class="fa fa-user-secret" aria-hidden="true"></i>
+										<span class="nav__text">Обо мне</span>
+									</a>
+								</li>
+								<li class="nav__item"><a href="career.html" class="nav__link">
+									<i class="fa fa-rocket" aria-hidden="true"></i>
+									<span class="nav__text">Карьерный путь</span>
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="portfolio.html" class="nav__link">
+									<i class="fa fa-briefcase" aria-hidden="true"></i>
+									<span class="nav__text">Портфолио</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</aside>
+				<!-- MAIN CONTENT -->							
+				<main class="main">
+					<!-- ABOUT -->
+					<div class="about">
+						<div class="about__left">
+							<div class="about__img">
+								<img class="about__photo" src="img/content/about.jpg" alt="My photo" />
 							</div>
 						</div>
-					</main>
-				</div>			
-			</section>			
-		</div>		
-	</div>
-	<!-- FOOTER -->
-	<footer class="footer">
-		<div class="container clearfix">
-			<div class="footer__left">	
-				<p class="footer__copyright">&#169; Дизайн сайта был разработан в школе LoftSchool</p>
-			</div>
-			<div class="footer__right">	
-				<div class="social">
-					<ul class="social__list">
-						<li class="social__item"><a href="#" class="social__link"></a></li>
-						<li class="social__item"><a href="#" class="social__link"></a></li>
-						<li class="social__item"><a href="#" class="social__link"></a></li>
-					</ul>
-				</div>
+						<div class="about__right">
+							<h1 class="heading">
+								Обо мне
+							</h1>
+							<div class="about__text">
+								<p>Меня зовут Альберт. Я живу в маленьком городке в Московской области, название которого - Подольск.</p>
+								<p>Я получил степерь бакалавра по робототехнике в МТУ (ранее МГТУ МИРЭА)</p>
+								<p>Не так давно я начал увлекаться сферой web-разработки. Сейчас я работаю HTML-верстальщиком.</p>
+								<p>Моя мечта стать "гуру" frontend разработки! И эта мечта меня полностью захватила! Я стараюсь постоянно развивать свои профессиональные навыки и использовать современные и актуальные технологии для моих проектов.</p>		
+							</div>
+							<div class="about__download">
+								<a href="#nogo" class="about__download-link" download><i class="fa fa-download about__download-link-icon"></i><span class="about__download-text">Скачать резюме</span></a>	
+							</div>
+						</div>
+					</div>
+				</main>
+			</div>			
+		</section>			
+	</div>		
+</div>
+<!-- FOOTER -->
+<footer class="footer">
+	<div class="container">
+		<div class="footer__left">	
+			<p class="footer__copyright">&#169; Дизайн сайта был разработан в школе LoftSchool</p>
+		</div>
+		<div class="footer__right">	
+			<div class="social">
+				<ul class="social__list">
+					<li class="social__item"><a href="#" class="social__link social__link_fb"></a></li>
+					<li class="social__item"><a href="#" class="social__link social__link_vk"></a></li>
+					<li class="social__item"><a href="#" class="social__link social__link_tw"></a></li>
+				</ul>
 			</div>
 		</div>
-	</footer>
+	</div>
+</footer>
 </body>
 </html>

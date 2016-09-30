@@ -1,0 +1,504 @@
+@font-face {
+  font-family: 'Fira Sans';
+  src: local("../../fonts/FiraSans/Fira Sans ExtraLight"), local("../../fonts/FiraSans/FiraSans-ExtraLight"), url("../../fonts/FiraSans/firasansextralight.woff2") format("woff2"), url("../../fonts/FiraSans/firasansextralight.woff") format("woff"), url("../../fonts/FiraSans/firasansextralight.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: local("../../fonts/FiraSans/Fira Sans ExtraLight Italic"), local("../../fonts/FiraSans/FiraSans-ExtraLightItalic"), url("../../fonts/FiraSans/firasansextralightitalic.woff2") format("woff2"), url("../../fonts/FiraSans/firasansextralightitalic.woff") format("woff"), url("../../fonts/FiraSans/firasansextralightitalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: local("../../fonts/FiraSans/Fira Sans Light"), local("../../fonts/FiraSans/FiraSans-Light"), url("../../fonts/FiraSans/firasanslight.woff2") format("woff2"), url("../../fonts/FiraSans/firasanslight.woff") format("woff"), url("../../fonts/FiraSans/firasanslight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: local("../../fonts/FiraSans/Fira Sans Light Italic"), local("../../fonts/FiraSans/FiraSans-LightItalic"), url("../../fonts/FiraSans/firasanslightitalic.woff2") format("woff2"), url("../../fonts/FiraSans/firasanslightitalic.woff") format("woff"), url("../../fonts/FiraSans/firasanslightitalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: local("../../fonts/FiraSans/Fira Sans Book"), local("../../fonts/FiraSans/FiraSans-Book"), url("../../fonts/FiraSans/firasansbook.woff2") format("woff2"), url("../../fonts/FiraSans/firasansbook.woff") format("woff"), url("../../fonts/FiraSans/firasansbook.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: local("../../fonts/FiraSans/Fira Sans Book Italic"), local("../../fonts/FiraSans/FiraSans-BookItalic"), url("../../fonts/FiraSans/firasansbookitalic.woff2") format("woff2"), url("../../fonts/FiraSans/firasansbookitalic.woff") format("woff"), url("../../fonts/FiraSans/firasansbookitalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: local("../../fonts/FiraSans/Fira Sans"), local("../../fonts/FiraSans/FiraSans-Regular"), url("../../fonts/FiraSans/firasans.woff2") format("woff2"), url("../../fonts/FiraSans/firasans.woff") format("woff"), url("../../fonts/FiraSans/firasans.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: local("../../fonts/FiraSans/Fira Sans Italic"), local("../../fonts/FiraSans/FiraSans-Italic"), url("../../fonts/FiraSans/firasansitalic.woff2") format("woff2"), url("../../fonts/FiraSans/firasansitalic.woff") format("woff"), url("../../fonts/FiraSans/firasansitalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: local("../../fonts/FiraSans/Fira Sans Medium"), local("../../fonts/FiraSans/FiraSans-Medium"), url("../../fonts/FiraSans/firasansmedium.woff2") format("woff2"), url("../../fonts/FiraSans/firasansmedium.woff") format("woff"), url("../../fonts/FiraSans/firasansmedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: local("../../fonts/FiraSans/Fira Sans Medium Italic"), local("../../fonts/FiraSans/FiraSans-MediumItalic"), url("../../fonts/FiraSans/firasansmediumitalic.woff2") format("woff2"), url("../../fonts/FiraSans/firasansmediumitalic.woff") format("woff"), url("../../fonts/FiraSans/firasansmediumitalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: local("../../fonts/FiraSans/Fira Sans SemiBold"), local("../../fonts/FiraSans/FiraSans-SemiBold"), url("../../fonts/FiraSans/firasanssemibold.woff2") format("woff2"), url("../../fonts/FiraSans/firasanssemibold.woff") format("woff"), url("../../fonts/FiraSans/firasanssemibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: local("../../fonts/FiraSans/Fira Sans SemiBold Italic"), local("../../fonts/FiraSans/FiraSans-SemiBoldItalic"), url("../../fonts/FiraSans/firasanssemibolditalic.woff2") format("woff2"), url("../../fonts/FiraSans/firasanssemibolditalic.woff") format("woff"), url("../../fonts/FiraSans/firasanssemibolditalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: local("../../fonts/FiraSans/Fira Sans Bold"), local("../../fonts/FiraSans/FiraSans-Bold"), url("../../fonts/FiraSans/firasansbold.woff2") format("woff2"), url("../../fonts/FiraSans/firasansbold.woff") format("woff"), url("../../fonts/FiraSans/firasansbold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: local("../../fonts/FiraSans/Fira Sans Bold Italic"), local("../../fonts/FiraSans/FiraSans-BoldItalic"), url("../../fonts/FiraSans/firasansbolditalic.woff2") format("woff2"), url("../../fonts/FiraSans/firasansbolditalic.woff") format("woff"), url("../../fonts/FiraSans/firasansbolditalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font: 18px 'Fira Sans';
+  background-color: #f6f6f6;
+  font-weight: 400;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  min-width: 960px;
+}
+
+.wrapper:after {
+  content: '';
+  display: block;
+  height: 50px;
+}
+
+.main-content {
+  padding-bottom: 72px;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: #414141;
+  height: 50px;
+  margin-top: -50px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+.container:after, .about:after, .career:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.header {
+  background-color: #fff;
+  height: 80px;
+  margin-bottom: 25px;
+  box-shadow: 1px 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.header__left, .header__right {
+  width: 50%;
+  float: left;
+}
+
+.header__right {
+  text-align: right;
+}
+
+.user {
+  margin-top: 8px;
+}
+
+.user__avatar, .user__name {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.user__avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #bebebe;
+}
+
+.user__avatar-img {
+  display: block;
+}
+
+.user__name {
+  margin-left: 12px;
+  margin-top: 2px;
+  max-width: 240px;
+}
+
+.contacts {
+  margin-top: 28px;
+}
+
+.contacts__trigger {
+  display: inline-block;
+  color: #33c1e3;
+  font-size: 18px;
+  line-height: 28px;
+  background: url("../../img/decor/header-border.png") repeat-x bottom;
+  font-weight: 500;
+}
+
+.contacts__trigger:hover {
+  color: #e85f61;
+  background: url("../../img/decor/header-border-hover.png") repeat-x bottom;
+}
+
+.footer__right, .footer__left {
+  width: 50%;
+  float: left;
+}
+
+.footer__copyright {
+  font-size: 14px;
+  line-height: 50px;
+  color: #9c9c9c;
+  margin: 0;
+  font-weight: 200;
+}
+
+.social {
+  text-align: right;
+  margin: 5px 0;
+}
+
+.social__list {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+.social__item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social__link {
+  width: 33px;
+  height: 40px;
+  display: block;
+}
+
+.social__link_fb {
+  background: transparent url("../img/icons/social/fb-disable.svg") left top no-repeat;
+}
+
+.social__link_fb:hover, .social__link_fb:focus {
+  background: transparent url("../img/icons/social/fb.svg") left top no-repeat;
+}
+
+.social__link_vk {
+  background: transparent url("../img/icons/social/vk-disable.svg") left top no-repeat;
+}
+
+.social__link_vk:hover, .social__link_vk:focus {
+  background: transparent url("../img/icons/social/vk.svg") left top no-repeat;
+}
+
+.social__link_tw {
+  background: transparent url("../img/icons/social/tw-disable.svg") left top no-repeat;
+}
+
+.social__link_tw:hover, .social__link_tw:focus {
+  background: transparent url("../img/icons/social/tw.svg") left top no-repeat;
+}
+
+.sidebar {
+  float: left;
+  width: 23%;
+}
+
+.nav__list {
+  text-align: right;
+}
+
+.nav__link {
+  display: block;
+  color: #414141;
+  line-height: 24px;
+  padding: 11px 23px 10px 0;
+  border-right: 6px solid transparent;
+  margin-right: -4px;
+}
+
+.nav__item_active .nav__link {
+  border-right-color: #33c1e3;
+  color: #33c1e3;
+}
+
+.nav__text {
+  margin-left: 10px;
+}
+
+.nav__item:hover .nav__link {
+  color: #33c1e3;
+}
+
+.main {
+  float: right;
+  width: 74%;
+}
+
+.heading {
+  font: 35px/38px 'Fira Sans';
+  font-weight: 500;
+  margin-bottom: 17px;
+}
+
+.about__left {
+  float: left;
+  width: 42%;
+  text-align: center;
+}
+
+.about__right {
+  float: right;
+  width: 54.7%;
+}
+
+.about__img {
+  display: inline-block;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  overflow: hidden;
+}
+
+.about__photo {
+  display: block;
+}
+
+.about__text {
+  color: #646464;
+  font-size: 18px;
+  line-height: 26px;
+  height: 320px;
+  overflow: auto;
+  margin-bottom: 57px;
+}
+
+.about__text p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.about__download {
+  text-align: right;
+}
+
+.about__download-link {
+  color: #e85f61;
+  border: 2px solid;
+  border-radius: 40px;
+  padding: 4px 12px;
+  font-family: 'Fira Sans';
+  font-size: 14px;
+  line-height: 28px;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.about__download-link:hover {
+  color: #FFF;
+  border-color: #e85f61;
+  background-color: #e85f61;
+}
+
+.about__download-text {
+  margin-left: 10px;
+  letter-spacing: 1px;
+}
+
+.career__left {
+  float: left;
+  width: 220px;
+}
+
+.career__right {
+  float: right;
+  width: 65%;
+}
+
+.career__img {
+  overflow: hidden;
+  border-radius: 9px;
+}
+
+.career__photo {
+  display: block;
+  max-width: 100%;
+}
+
+.career__item {
+  text-align: right;
+}
+
+.career__element {
+  width: 82.5%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 22px;
+}
+
+.career__element:hover, .career__element:focus {
+  background-color: #33c1e3;
+}
+
+.career__element:hover .career__position, .career__element:hover .career__period, .career__element:hover .career__title, .career__element:focus .career__position, .career__element:focus .career__period, .career__element:focus .career__title {
+  color: #FFF;
+}
+
+.career__element:hover .career__year, .career__element:focus .career__year {
+  color: #32c3e5;
+  font-weight: bold;
+}
+
+.career__element:hover .career__year:after, .career__element:focus .career__year:after {
+  border-color: #94e0f2;
+  left: 37px;
+}
+
+.career__element:after, .career__element:before {
+  content: '';
+  display: block;
+  width: 1px;
+  background-color: #dddddd;
+  position: absolute;
+  left: -20px;
+  z-index: 1;
+}
+
+.career__element:after {
+  top: 50%;
+  bottom: -22px;
+}
+
+.career__element:before {
+  top: 0;
+  bottom: 50%;
+}
+
+.career__item:first-child .career__element:before, .career__item:last-child .career__element:after {
+  display: none;
+}
+
+.career__title {
+  color: #5a5a5a;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.career__position, .career__period {
+  color: #727272;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.career__year {
+  font-size: 14px;
+  color: #727272;
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  margin-top: -11px;
+  margin-right: 36px;
+}
+
+.career__year:after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #32c3e5;
+  border: 5px solid #f6f6f6;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  left: 35px;
+  z-index: 2;
+}
