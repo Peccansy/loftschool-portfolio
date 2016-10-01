@@ -15,10 +15,11 @@
 }
 .nav__item_active .nav__link{
 	border-right-color: $hover-color;
-	color: $hover-color;	
+	color: $hover-color;
+	font-weight: 500;	
 }
 .nav__text {
-	margin-left: 10px;
+	margin-left: 5px;
 }
 .nav__item:hover .nav__link{
 	color: $hover-color;

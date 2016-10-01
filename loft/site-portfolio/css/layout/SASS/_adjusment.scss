@@ -22,6 +22,7 @@ body,html {
 	width: 940px;
 	margin: 0 auto;
 	@extend %clearfix;
+	height: 100%;
 }
 .footer {
 	background-color: #414141;

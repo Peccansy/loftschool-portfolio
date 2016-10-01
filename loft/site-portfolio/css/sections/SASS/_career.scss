@@ -7,15 +7,20 @@
 }
 .career__right {
 	float: right;
-	width: 65%
+	width: 65.8%;
 }
 .career__img {
 	overflow: hidden;
 	border-radius: 9px;
+	margin-top: 8px;
 }
 .career__photo {
 	display: block;
 	max-width: 100%;
+	min-height: 220px;
+}
+.career__list {
+	margin-top: 8px;
 }
 .career__item {
 	text-align: right;
@@ -40,9 +45,11 @@
 		.career__year {
 			color: #32c3e5;
 			font-weight: bold;
+			font-size: 17px;
 			&:after {
 				border-color: #94e0f2;
-				left:37px;
+				left: 41px;				
+				margin-top: -11px;
 			}	
 		}
 
@@ -84,8 +91,8 @@
 	position: absolute;
 	right: 100%;
 	top: 50%;
-	margin-top: -11px;
-	margin-right: 36px;
+	margin-top: -8px;
+	margin-right: 35px;
 	&:after {
 		content: '';
 		display: block;
@@ -96,8 +103,8 @@
 		border-radius: 50%;
 		position: absolute;
 		top: 50%;
-		margin-top: -10px;	
-		left: 35px;
+		margin-top: -10px;
+		left: 33px;
 		z-index: 2;	
 	}
 }

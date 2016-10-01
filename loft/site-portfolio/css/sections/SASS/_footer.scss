@@ -32,9 +32,9 @@
 }
 @each $item in (fb, vk, tw) {
 	.social__link_#{$item} {
-		background:transparent url('../img/icons/social/#{$item}-disable.svg') left top no-repeat;
+		background:transparent url('../img/icons/social/#{$item}-disable.svg') center center no-repeat;
 		&:hover, &:focus {
-			background:transparent url('../img/icons/social/#{$item}.svg') left top no-repeat;
+			background:transparent url('../img/icons/social/#{$item}.svg') center center no-repeat;
 		}
 	}
 }

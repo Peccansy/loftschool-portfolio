@@ -13,7 +13,7 @@
 	text-align: right;
 }
 .user {
-	margin-top: 8px;
+	 margin-top: 10px;
 }
 .user__avatar, .user__name {
 	display: inline-block;
@@ -40,11 +40,11 @@
 	color: $hover-color;
 	font-size: 18px;
 	line-height: 28px;
-	background: url('../../img/decor/header-border.png') repeat-x bottom;
+	background: url('../img/decor/header-border.png') repeat-x bottom;
 	font-weight: 500;
 
 	&:hover{
 	color: $hover-alternative;
-	background: url('../../img/decor/header-border-hover.png') repeat-x bottom;
+	background: url('../img/decor/header-border-hover.png') repeat-x bottom;
 	}
 }
