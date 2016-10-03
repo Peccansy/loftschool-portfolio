@@ -19,7 +19,12 @@
 	font-weight: 500;	
 }
 .nav__text {
-	margin-left: 5px;
+	margin-left: 5px;	
+    display: inline-block;
+    vertical-align: middle;    
+    word-break: break-word;
+    max-width: 75%;
+    text-align: left;
 }
 .nav__item:hover .nav__link{
 	color: $hover-color;
