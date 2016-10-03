@@ -11,7 +11,12 @@
 	line-height: 24px;
 	padding: 11px 23px 10px 0;
 	border-right: 6px solid transparent;
-	margin-right: -4px;	
+	margin-right: -4px;
+	font-size: 0px;
+	i{
+		font-size: 18px;
+		vertical-align: middle;
+	}
 }
 .nav__item_active .nav__link{
 	border-right-color: $hover-color;
@@ -19,12 +24,13 @@
 	font-weight: 500;	
 }
 .nav__text {
-	margin-left: 5px;	
+	margin-left: 10px;	
     display: inline-block;
     vertical-align: middle;    
     word-break: break-word;
     max-width: 75%;
     text-align: left;
+    font-size: 18px;
 }
 .nav__item:hover .nav__link{
 	color: $hover-color;
