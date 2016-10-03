@@ -2,4 +2,38 @@
 	.container {
 		width: 480px;
 	}
+	.header__left {
+		width: 70%;
+	}
+	.header__right {
+		width: 30%;
+	}
+	.heading {
+		text-align: center;
+	}
+	.about__left, .about__right {
+		width: 100%;
+		float: none;
+	}
+	.about__download {
+		text-align: center;
+	}
+	.footer {
+		height: 95px;
+	}
+	.footer__left, .footer__right {
+		float: none;
+		width: 100%;
+		text-align: center;	
+	}
+	.footer__copyright {
+		line-height: 45px;
+	}
+	.social {
+		text-align: center;
+	}
+	.social__link {
+		height: 33px;
+		background-position: top center;
+	}
 }

@@ -1,5 +1,50 @@
 @media screen and (max-width: 992px) {
+	.main-content {
+		padding-bottom: 20px;
+	}
 	.container {
-		width: 768px;
+		width: 728px;
+	}
+	.sidebar {
+		float: none;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.nav__list {
+		text-align: left;
+	}
+	.nav__item {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.nav__link {
+		border:none;
+	}
+	.nav__item_active .nav__link{
+		border: none;
+	}
+	.nav__text {
+		max-width: 100%;
+	}
+	.main {
+		float: none;
+		width: 100%;	}
+
+	.about__left {
+		width: 31%;
+	}
+	.about__right {
+		width: 69%;
+	}
+	.about__img {	
+		width: 160px;
+		height: 160px;	
+	}
+	.portfolio__list {
+		margin-left: -20px;
+	}
+	.portfolio__item {
+		margin-left: 20px;
+		margin-bottom: 20px;
 	}
 }
