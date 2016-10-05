@@ -15,6 +15,16 @@
 			font-size: 48px;
 		}
 	}
+	.contacts__dropdown {
+	    width: 160px;		
+		&:before,&:after {
+			left: 92%;
+		}
+
+	}
+	.contacts__link-text, .contacts__link i {
+		font-size: 14px;
+	}
 	.nav__link {
 		padding-right: 20px;
 	}

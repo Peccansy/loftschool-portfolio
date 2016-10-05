@@ -34,10 +34,23 @@
 						<div class="contacts">
 							<a href="#nogo" class="contacts__trigger">Мои контакты</a>
 							<i class="fa fa-phone contacts__trigger contacts__trigger_sm"></i>
-							<!-- <ul class="contacts__dropdown">
-								<li class="contacts__dropdown-item">Телефон: <a href="tel:79111111111" class="contacts__link">+7(911)111-11-11</a></li>
-								<li class="contacts__dropdown-item">Email: <a href="mailto:gotodno@gmail.com" class="contacts__link">gotodno@gmail.com</a></li>		
-							</ul> -->
+							<ul class="contacts__dropdown">
+								<li class="contacts__dropdown-item">										
+									<a href="tel:79111111111" class="contacts__link">
+										<i class="fa fa-envelope"></i><span class="contacts__link-text">+7(911)111-11-11</span>
+									</a>
+								</li>
+								<li class="contacts__dropdown-item">
+									<a href="mailto:gotodno@gmail.com" class="contacts__link">
+										<i class="fa fa-phone"></i><span class="contacts__link-text">gotodno@gmail.com</span>
+									</a>
+								</li>
+								<li class="contacts__dropdown-item">
+									<a href="skype:milkyway-xd?add" class="contacts__link">
+										<i class="fa fa-skype"></i><span class="contacts__link-text">milkyway-xd</span>
+									</a>
+								</li>		
+							</ul>
 						</div>
 					</div>
 				</div>     
@@ -116,10 +129,11 @@
 	</div>
 </footer>
 <!-- SRIPTS -->
-<!-- <script src="js/perfect-scrollbar.jquery.min.js"></script> -->
+<script src="js/jquery-3.1.1.slim.min.js"></script>
+<script src="js/contacts.min.js"></script>
 <script src="js/perfect-scrollbar.js"></script>
 <script>	
-    Ps.initialize(document.getElementById('scroll'));      
+	Ps.initialize(document.getElementById('scroll'));      
 </script>
 </body>
 </html>

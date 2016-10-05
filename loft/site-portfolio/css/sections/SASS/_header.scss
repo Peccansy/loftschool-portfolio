@@ -37,7 +37,8 @@
 	max-width: 240px;
 }
 .contacts {
-	margin-top: 28px;	
+	margin-top: 28px;
+	position: relative;	
 }
 .contacts__trigger {
 	display: inline-block;
@@ -46,13 +47,65 @@
 	line-height: 28px;
 	background: url('../img/decor/header-border.png') repeat-x bottom;
 	font-weight: 500;
-
-	&:hover{
-	color: $hover-alternative;
-	background: url('../img/decor/header-border-hover.png') repeat-x bottom;
-	}
+	
 	&_sm{
 		display: none;
-		background: none;
+		background: none;				
+	}	
+	&_active {
+		color: $hover-alternative;
+		background: url('../img/decor/header-border-hover.png') repeat-x bottom;
 	}
+}
+.contacts__trigger_sm.contacts__trigger_active {
+	background:none;
+}
+.contacts__dropdown {
+	display: none;
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid #dedede;
+	border-radius: 10px;
+	position: absolute;
+	right: 0;
+	top: calc(100% + 16px);
+	z-index: 1000;
+	width: 200px;
+	&:before,&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		border: 6px solid transparent;
+		border-bottom: 10px solid #fff;
+		top: -16px;
+		left: 75%;
+		margin-left: -12px;
+	}
+	&:before {
+		top: -17px;
+		border-bottom-color: #dedede;
+	}
+	&_triggered {
+		display: block;
+	}	
+}
+.contacts__dropdown-item {
+	text-align: left;
+}
+.contacts__link {
+	font-size: 	0px;	
+	display: block;
+    padding: 5px 0;	
+	i{
+		font-size: 	18px;
+		vertical-align: middle;
+		color: 	$hover-color;
+	}
+}
+.contacts__link-text {
+	display: inline-block;	
+	vertical-align: middle;	
+	font-size: 	18px;
+	color: 	#414141;
+	margin-left: 10px;
 }
