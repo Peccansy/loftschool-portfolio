@@ -3,9 +3,12 @@ $hover-color: #33c1e3;
 $hover-alternative: #e85f61;
 	
 //LAYOUT
+@import 'layout/SASS/normalize';
 @import 'layout/SASS/fonts';
+@import 'layout/SASS/font-awesome';
 @import 'layout/SASS/adjusment';
 @import 'layout/SASS/mixins';
+@import 'layout/SASS/perfect-scrollbar';
 // SECTIONS
 @import 'sections/SASS/header';
 @import 'sections/SASS/footer';
