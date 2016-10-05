@@ -1,4 +1,9 @@
 @media screen and (max-width: 769px) {
+	.wrapper {
+		&:after {
+			height: 95px;
+		}
+	}
 	.container {
 		width: 480px;
 	}
@@ -15,11 +20,36 @@
 		width: 100%;
 		float: none;
 	}
+	.about__text {
+		height: 320px;
+	}
 	.about__download {
 		text-align: center;
 	}
+	.career__right,.career__left {
+		float: none;
+		width: 100%;
+	}
+	.career__img {
+		margin: 0 auto 17px;
+	}
+	.career__item {
+		text-align: center;
+	}
+	.career__element {
+		&:after,&:before {
+			display: none;
+		}
+	}
+	.career__year {
+		display: none;
+	}
+	.portfolio__list {
+		margin-left: -10px;
+	}	
 	.footer {
 		height: 95px;
+		margin-top: -95px;
 	}
 	.footer__left, .footer__right {
 		float: none;

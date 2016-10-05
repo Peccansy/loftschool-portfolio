@@ -12,12 +12,14 @@
 .career__img {
 	overflow: hidden;
 	border-radius: 9px;
-	margin-top: 8px;
+	margin-top: 8px;	
+    width: 220px;
+    height: 220px;
 }
 .career__photo {
 	display: block;
 	max-width: 100%;
-	min-height: 220px;
+	height: auto;
 }
 .career__list {
 	margin-top: 8px;

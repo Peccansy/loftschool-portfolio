@@ -8,7 +8,8 @@
 	<!-- STYLES -->
 	<link rel="stylesheet" href="css/layout/normalize.css">	
 	<link rel="stylesheet" href="css/layout/font-awesome.min.css">		
-	<link rel="stylesheet" href="css/common.min.css">	
+	<link rel="stylesheet" href="css/common.min.css">
+	<link rel="stylesheet" href="css/layout/perfect-scrollbar.css">	
 </head>
 <body>
 <!--[if lte IE 9]
@@ -32,6 +33,7 @@
 					<div class="header__right">
 						<div class="contacts">
 							<a href="#nogo" class="contacts__trigger">Мои контакты</a>
+							<i class="fa fa-phone contacts__trigger contacts__trigger_sm"></i>
 							<!-- <ul class="contacts__dropdown">
 								<li class="contacts__dropdown-item">Телефон: <a href="tel:79111111111" class="contacts__link">+7(911)111-11-11</a></li>
 								<li class="contacts__dropdown-item">Email: <a href="mailto:gotodno@gmail.com" class="contacts__link">gotodno@gmail.com</a></li>		
@@ -80,7 +82,7 @@
 							<h1 class="heading">
 								Обо мне
 							</h1>
-							<div class="about__text">
+							<div id="scroll" class="about__text">
 								<p>Меня зовут Альберт. Я живу в маленьком городке в Московской области, название которого - Подольск.</p>
 								<p>Я получил степерь бакалавра по робототехнике в МТУ (ранее МГТУ МИРЭА)</p>
 								<p>Не так давно я начал увлекаться сферой web-разработки. Сейчас я работаю HTML-верстальщиком.</p>
@@ -113,5 +115,11 @@
 		</div>
 	</div>
 </footer>
+<!-- SRIPTS -->
+<!-- <script src="js/perfect-scrollbar.jquery.min.js"></script> -->
+<script src="js/perfect-scrollbar.js"></script>
+<script>	
+    Ps.initialize(document.getElementById('scroll'));      
+</script>
 </body>
 </html>

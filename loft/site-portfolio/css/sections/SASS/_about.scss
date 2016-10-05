@@ -28,8 +28,10 @@
     font-size: 18px;
     line-height: 26px;
     height: 320px;
-    overflow: auto;
+    overflow: hidden;
     margin-bottom: 57px;
+    position: relative;
+    padding-right: 10px;
 }
 .about__text p {
 	margin: 0;

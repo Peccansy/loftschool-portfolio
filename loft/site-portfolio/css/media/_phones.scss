@@ -2,4 +2,67 @@
 	.container {
 		width: 95%;
 	}
+	.header__left {
+		width: 80%;
+	}
+	.header__right {
+		width: 20%;
+	}
+	.contacts__trigger {
+		display: none;
+		&_sm {
+			display: inline-block;
+			font-size: 48px;
+		}
+	}
+	.nav__link {
+		padding-right: 20px;
+	}
+	.nav__link i {
+		display: none;		
+	}
+	.nav__item_active .nav__link {    
+		font-weight: 600;
+	}
+	.nav__text {
+		font-size: 14px;
+		margin-left: 0;
+	}
+	.user__name {
+		font-size: 14px;
+		word-wrap: break-word;
+		word-break: break-word;
+	}
+	.about__img {
+		width: 140px;
+		height: 140px;
+	}
+	.about__text {
+		height: 100%;
+		padding-right: 0;
+		p {
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+	.career__element {
+		width: 100%;
+	}
+	.portfolio__list {
+		margin-left: 0;		
+	}
+	.portfolio__item {
+		width: 100%;
+		margin-left: 0;
+	}
+	.portfolio__image {
+		min-width: 100%;
+		height: auto;
+		max-height: 100%;
+	}
+	.footer__copyright {
+		line-height: 20px;
+		padding-top: 10px;
+	}
+
 }
