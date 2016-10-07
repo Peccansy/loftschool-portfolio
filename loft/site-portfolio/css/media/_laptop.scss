@@ -5,10 +5,13 @@
 	.container {
 		width: 728px;
 	}
+	.header {
+		margin-bottom: 15px;
+	}
 	.sidebar {
 		float: none;
 		width: 100%;
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 	}
 	.nav__list {
 		text-align: left;
@@ -19,6 +22,7 @@
 	}
 	.nav__link {
 		border:none;
+		padding: 11px 26px 10px 0;
 	}
 	.nav__item_active .nav__link{
 		border: none;
@@ -34,11 +38,16 @@
 		width: 31%;
 	}
 	.about__right {
-		width: 69%;
+		width: 66%;
+		box-sizing: border-box;
+		padding-right: 36px;
 	}
 	.about__img {	
-		width: 160px;
-		height: 160px;	
+		width: 165px;
+		height: 165px;	
+	}
+	.about__text {
+		height: 363px;
 	}
 	.portfolio__list {
 		margin-left: -20px;
