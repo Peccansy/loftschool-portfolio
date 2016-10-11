@@ -25,14 +25,10 @@
 	.contacts {
 		margin-top: 27px;		
 		margin-right: 2px;
-	}	
-	.contacts__dropdown {
-		width: 160px;		
-		&:before,&:after {
-			left: 92%;
-		}
-
 	}
+	.contacts__dropdown {
+		width: 160px;
+	}	
 	.contacts__link-text, .contacts__link i {
 		font-size: 14px;
 	}

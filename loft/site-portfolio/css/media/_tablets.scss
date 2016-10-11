@@ -23,6 +23,12 @@
 			font-size: 40px;
 		}
 	}
+	.contacts__dropdown {				
+		&:before,&:after {
+			left: 95%;
+		}
+
+	}
 	.sidebar {
 		margin-bottom: 28px;
 	}
