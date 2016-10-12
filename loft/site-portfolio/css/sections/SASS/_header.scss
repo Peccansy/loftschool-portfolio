@@ -13,7 +13,7 @@
 	text-align: right;
 }
 .user {
-	 margin-top: 10px;
+	margin-top: 10px;
 }
 .user__avatar, .user__name {
 	display: inline-block;
@@ -39,6 +39,15 @@
 .contacts {
 	margin-top: 28px;
 	position: relative;	
+	&:hover {
+		.contacts__trigger {
+			color: $hover-alternative;
+			background: url('../img/decor/header-border-hover.png') repeat-x bottom;		
+		}
+		.contacts__drop-hover {
+			display: block;
+		}
+	}
 }
 .contacts__trigger {
 	display: inline-block;
@@ -51,16 +60,13 @@
 	&_sm{
 		display: none;
 		background: none;				
-	}	
-	&_active {
-		color: $hover-alternative;
-		background: url('../img/decor/header-border-hover.png') repeat-x bottom;
 	}
+	
 }
 .contacts__trigger_sm.contacts__trigger_active {
 	background:none;
 }
-.contacts__dropdown {
+.contacts__drop-hover {
 	display: none;
 	padding: 20px;
 	background-color: #fff;
@@ -71,6 +77,17 @@
 	top: calc(100% + 16px);
 	z-index: 1000;
 	width: 200px;
+	&:before {
+		content: '';
+		display: block;
+		width: 100%;
+		position: absolute;
+		height: 30px;
+		top: -28px;
+		left: 0;
+	}
+}
+.contacts__dropdown {		
 	&:before,&:after {
 		content: '';
 		display: block;
@@ -84,18 +101,15 @@
 	&:before {
 		top: -17px;
 		border-bottom-color: #dedede;
-	}
-	&_triggered {
-		display: block;
 	}	
 }
 .contacts__dropdown-item {
-	text-align: left;
+	text-align: left;	
 }
 .contacts__link {
 	font-size: 	0px;	
 	display: block;
-    padding: 5px 0;	
+	padding: 5px 0;	
 	i{
 		font-size: 	18px;
 		vertical-align: middle;
