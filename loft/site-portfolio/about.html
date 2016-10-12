@@ -128,19 +128,6 @@
 	<!-- SRIPTS -->
 	<script src="js/jquery-3.1.1.slim.min.js"></script>
 	<script src="js/contacts.min.js"></script>
-	<script src="js/perfect-scrollbar.jquery.min.js"></script>
-	<script>
-	$(document).ready(function(){
-		function windowSize() {
-			if ($(window).width()<=480){
-				$('#scroll').perfectScrollbar('destroy');
-			}else {
-				$('#scroll').perfectScrollbar();	
-			}
-		}
-		$(window).on('load resize',windowSize);			
-
-	});	      
-	</script>
+	<script src="js/perfect-scrollbar.jquery.min.js"></script>	
 </body>
 </html>
