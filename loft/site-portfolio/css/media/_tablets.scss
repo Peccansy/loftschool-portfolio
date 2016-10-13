@@ -16,6 +16,9 @@
 	.header__right {
 		width: 30%;
 	}
+	.contacts__drop-hover {
+		top: calc(100% + 10px);
+	}
 	.contacts__trigger {
 		display: none;
 		&_sm {
@@ -96,5 +99,8 @@
 	.social__link {
 		height: 33px;
 		background-position: top center;
+		&:hover {
+			background-position: top center;
+		}
 	}
 }

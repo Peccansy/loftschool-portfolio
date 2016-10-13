@@ -39,10 +39,15 @@
 .contacts {
 	margin-top: 28px;
 	position: relative;	
+	display: inline-block;
+	vertical-align: middle;
 	&:hover {
 		.contacts__trigger {
 			color: $hover-alternative;
-			background: url('../img/decor/header-border-hover.png') repeat-x bottom;		
+			background: url('../img/decor/header-border-hover.png') repeat-x bottom;
+			&_sm {
+				background: none;
+			}		
 		}
 		.contacts__drop-hover {
 			display: block;
@@ -68,7 +73,7 @@
 }
 .contacts__drop-hover {
 	display: none;
-	padding: 20px;
+	padding: 20px;	
 	background-color: #fff;
 	border: 1px solid #dedede;
 	border-radius: 10px;

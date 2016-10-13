@@ -35,6 +35,9 @@
 	.sidebar {
 		margin-bottom: 16px;
 	}
+	.nav__list {
+		text-align: center;
+	}
 	.nav__link {
 		padding-right: 20px;
 		padding-top: 0;
@@ -90,6 +93,9 @@
 	}
 	.social__link {   
 		background-position: bottom center;
+		&:hover {
+			background-position: bottom center;
+		}
 	}
 	.hello {
 		width: 300px;
