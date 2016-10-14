@@ -72,16 +72,21 @@
 		width: 100%;
 	}
 	.portfolio__list {
-		margin-left: 0;		
+		margin-left: 0;
+		text-align: center;		
 	}
 	.portfolio__item {
-		width: 100%;
-		margin-left: 0;
+		max-width: 300px;			
+		width: 100%;		
+		margin-left: 0;		
 	}
-	.portfolio__image {
+	.portfolio__image {		
 		min-width: 100%;
 		height: auto;
 		max-height: 100%;
+	}
+	.portfolio__information {
+		text-align: left;
 	}
 	.footer {
 		height: 115px;
