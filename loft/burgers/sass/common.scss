@@ -1,0 +1,15 @@
+// COLORS
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+
+@import 'layout/mixins';
+@import 'layout/fonts';
+@import 'layout/adjusments';
+
+@import 'sections/hello';
+@import 'sections/best';
+@import 'sections/burgers';
+@import 'sections/map';
+
+

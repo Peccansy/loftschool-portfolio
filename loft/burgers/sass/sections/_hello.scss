@@ -1,0 +1,95 @@
+.hello {
+	background:transparent url('../img/bg/bg-hello.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+.header {
+	position: absolute;
+	width: 100%;
+	max-width: 940px;
+}
+.header__left {
+	float: left;
+	width: 25%;
+}
+.header__logo {
+	@include inline-block(middle);
+	margin-top: 10px;
+	overflow: hidden;
+}
+.header__logo-pic {
+	display: block;
+}
+.header__right {	
+	float: right;
+	width: 75%;
+}
+.nav__list {
+	font-size: 0;
+	margin-top: 40px;
+	text-align: right;
+}
+.nav__item {
+	@include inline-block(middle);
+	padding: 0 15px;
+	position: relative;
+	&:before {
+		content: '';
+		display: block;
+		width: 4px;
+		height: 4px;
+		position: absolute;
+		top: 50%;
+		margin-top: -2px;
+		right: 100%;
+		margin-right: -2px;
+		background-color: #fff;
+		border-radius: 50%;
+	}
+	&:first-child:before {
+		display: none;
+	}
+	&_order {
+		padding: 3px 15px;
+		background-color: $orange;
+		border-radius: 7px;
+		&:before {
+			display: none;
+		}
+	}
+}
+.nav__link {
+	font: .81rem/1.875rem 'ubuntumedium';
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+.hello__inner {
+	position: relative;
+	top: 50%;
+	transform:translateY(-50%);
+	@extend %clearfix;
+}
+.hello__left {
+	width: 50%;
+	float: left;
+}
+.hello__right{
+	@extend .hello__left;
+	float: right;
+	padding-top: 150px;
+}
+.hello__desc {
+	font: 4.06rem/3.75rem 'lifehackmedium';
+}
+// .hello__pic {
+// 	display: block;
+// 	height: 370px;
+// 	width: 460px;
+// }
+.hello__arrow {
+	display: inline-block;
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	margin-left: -24px;
+}

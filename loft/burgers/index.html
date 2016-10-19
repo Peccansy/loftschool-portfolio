@@ -5,6 +5,9 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 	<title>BURGERS</title>
+	<!-- STYLES -->
+	<link rel="stylesheet" href="vendors/css/vendors.min.css">
+	<link rel="stylesheet" href="css/common.min.css">	
 </head>
 <body>
 	<!--[if lte IE 9]
@@ -41,7 +44,7 @@
 									<li class="nav__item">
 										<a href="#" class="nav__link">контакты</a>
 									</li>
-									<li class="nav__item">
+									<li class="nav__item nav__item_order">
 										<a href="#" class="nav__link">заказать</a>
 									</li>
 								</ul>
@@ -61,7 +64,7 @@
 							</div>
 						</div>
 					</div>
-					<a href="#">						
+					<a class="hello__arrow" href="#">						
 						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						width="28.685px" height="14.479px" viewBox="0 0 28.685 14.479" enable-background="new 0 0 28.685 14.479" xml:space="preserve">
 						<g>
@@ -77,15 +80,17 @@
 			</div>
 		</section>
 		<section class="section best">
-			<div class="container">
-				<div class="section__title section__title_black">
-					мы лучшие
-				</div>
+			<div class="container">				
 				<div class="best__inner">
+					<div class="section__title section__title_black">
+						мы лучшие
+					</div>
 					<ul class="best__list">
 						<li class="best__item">
 							<div class="best__img">
-								<img src="img/icons/meat.svg" alt="Meat icon" class="best__pic">
+								<div class="best__img-container">
+									<img src="img/icons/meat.svg" alt="Meat icon" class="best__pic">
+								</div>
 							</div>
 							<div class="best__title">
 								100% свежее мясо
@@ -98,7 +103,9 @@
 						</li>
 						<li class="best__item">
 							<div class="best__img">
-								<img src="img/icons/hand.svg" alt="Hand icon" class="best__pic">
+								<div class="best__img-container">
+									<img src="img/icons/hand.svg" alt="Hand icon" class="best__pic">
+								</div>
 							</div>
 							<div class="best__title">
 								Ручная сборка
@@ -111,14 +118,16 @@
 						</li>
 						<li class="best__item">
 							<div class="best__img">
-								<img src="img/icons/natural.svg" alt="Natural icon" class="best__pic">
+								<div class="best__img-container">
+									<img src="img/icons/natural.svg" alt="Natural icon" class="best__pic">
+								</div>
 							</div>
 							<div class="best__title">
 								Натуральные ингредиенты
 							</div>
 							<div class="best__text">
 								<p>
-									Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.
+									Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.
 								</p>
 							</div>
 						</li>
@@ -126,51 +135,53 @@
 				</div>
 			</div>
 		</section>
-		<section class="section burders">
-			<div class="container">
+		<section class="section burgers">			
+			<div class="burgers__inner">
 				<div class="slider">
-					<div class="slider__controls">
-						<a href="#" class="slider__btn slider__btn_prew">
-							<img src="img/icons/arrow-scroll.svg" alt="left arrow" class="slider__btn-pic">
-						</a>
-						<a href="#" class="slider__btn slider__btn_prew">
-							<img src="img/icons/arrow-scroll.svg" alt="right arrow" class="slider__btn-pic">
-						</a>
-					</div>
-					<ul class="slider__list">
-						<li class="slider__item">
-							<div class="slider__item-left">
-								<div class="composition">
-									<div class="composition__icon">
-										<img class="composition__pic" src="img/icons/burger.svg" alt="burger">
-									</div>										
-									<div class="composition__text">
-										состав
-									</div>
-									<div class="slider__burger">
-										<img class="slider__burder-pic" src="img/content/dark-burger.png" alt="">
-									</div>									
-								</div>
-								<div class="slider__item-right">
-									<div class="section__title section__title_white">
-										dark beef burger
-									</div>
-									<div class="slider__desc">
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ipsam impedit laudantium in repudiandae excepturi quo accusantium odit id, sequi facilis eum quos aliquam nobis.
-										</p>
-									</div>
-									<div class="slider__info">
-										<div class="slider__price">
-											500 рублей
+					<div class="container">
+						<div class="slider__controls">
+							<a href="#" class="slider__btn slider__btn_prew">
+								<img src="img/icons/arrow-scroll.svg" alt="left arrow" class="slider__btn-pic">
+							</a>
+							<a href="#" class="slider__btn slider__btn_next">
+								<img src="img/icons/arrow-scroll.svg" alt="right arrow" class="slider__btn-pic">
+							</a>
+						</div>
+						<ul class="slider__list">
+							<li class="slider__item">
+								<div class="slider__item-left">
+									<div class="composition">
+										<div class="composition__icon">
+											<img class="composition__pic" src="img/icons/burger.svg" alt="burger">
+										</div>										
+										<div class="composition__text">
+											состав
 										</div>
-										<a href="#" class="slider__btn">Заказать</a>
+										<div class="slider__burger">
+											<img class="slider__burder-pic" src="img/content/dark-burger.png" alt="">
+										</div>									
 									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>				
+									<div class="slider__item-right">
+										<div class="section__title section__title_white">
+											dark beef burger
+										</div>
+										<div class="slider__desc">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ipsam impedit laudantium in repudiandae excepturi quo accusantium odit id, sequi facilis eum quos aliquam nobis.
+											</p>
+										</div>
+										<div class="slider__info">
+											<div class="slider__price">
+												500 рублей
+											</div>
+											<a href="#" class="slider__btn">Заказать</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>	
+				</div>
 			</section>
 			<section class="section team">
 				<div class="container">
@@ -436,7 +447,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section">
+			<section class="section map">
 
 			</section>
 		</div>

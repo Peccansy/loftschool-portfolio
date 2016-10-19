@@ -1,0 +1,53 @@
+* {
+	box-sizing: border-box;
+}
+body, html {
+	height: 100%;
+	background-color: #313436;
+	color: #fff;
+	font: 16px/1.42 'ubuntulight';
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-weight: normal;	
+}
+ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+.wrapper {
+	width: 100%;
+	min-width: 950px;
+	min-height: 100%;
+	overflow: hidden;
+}
+.container {
+	width: 940px;
+	margin: 0 auto;
+	height: 100%;
+	@extend %clearfix;
+}
+.section {
+	height: 100vh;
+	min-height: 650px;
+	width: 100%;
+	position: relative;	
+}
+.section__title {	
+	font: 4.5rem/64px 'gagalinregular';
+	color: $yellow;	
+	margin-bottom: 25px;
+	text-transform: uppercase;
+	&_white {
+		color: #fff;
+	}
+	&_black {
+		color: $black;
+	}
+}
