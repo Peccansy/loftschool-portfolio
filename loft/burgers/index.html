@@ -88,8 +88,7 @@
 					<ul class="best__list">
 						<li class="best__item">
 							<div class="best__img">
-								<div class="best__img-container">
-									<img src="img/icons/meat.svg" alt="Meat icon" class="best__pic">
+								<div class="best__img-container icon-meat">									
 								</div>
 							</div>
 							<div class="best__title">
@@ -103,8 +102,7 @@
 						</li>
 						<li class="best__item">
 							<div class="best__img">
-								<div class="best__img-container">
-									<img src="img/icons/hand.svg" alt="Hand icon" class="best__pic">
+								<div class="best__img-container icon-hand">									
 								</div>
 							</div>
 							<div class="best__title">
@@ -118,8 +116,8 @@
 						</li>
 						<li class="best__item">
 							<div class="best__img">
-								<div class="best__img-container">
-									<img src="img/icons/natural.svg" alt="Natural icon" class="best__pic">
+								<div class="best__img-container icon-natural">
+									
 								</div>
 							</div>
 							<div class="best__title">
@@ -139,129 +137,227 @@
 			<div class="burgers__inner">
 				<div class="slider">
 					<div class="container">
-						<div class="slider__controls">
-							<a href="#" class="slider__btn slider__btn_prew">
-								<img src="img/icons/arrow-scroll.svg" alt="left arrow" class="slider__btn-pic">
-							</a>
-							<a href="#" class="slider__btn slider__btn_next">
-								<img src="img/icons/arrow-scroll.svg" alt="right arrow" class="slider__btn-pic">
-							</a>
-						</div>
-						<ul class="slider__list">
-							<li class="slider__item">
-								<div class="slider__item-left">
-									<div class="composition">
-										<div class="composition__icon">
-											<img class="composition__pic" src="img/icons/burger.svg" alt="burger">
-										</div>										
-										<div class="composition__text">
-											состав
+						<div class="slider__inner">
+							<div class="slider__controls">
+								<a href="#" class="slider__btn slider__btn_prew">
+									<img src="img/icons/arrow-scroll.svg" alt="left arrow" class="slider__btn-pic">
+								</a>
+								<a href="#" class="slider__btn slider__btn_next">
+									<img src="img/icons/arrow-scroll.svg" alt="right arrow" class="slider__btn-pic">
+								</a>
+							</div>
+							<ul class="slider__list">
+								<li class="slider__item">
+									<div class="slider__item-left">
+										<div class="composition">
+											<div class="composition__icon">
+												<img class="composition__pic" src="img/icons/burger.svg" alt="burger">
+											</div>										
+											<div class="composition__text">
+												состав
+											</div>
+											<div class="composition__dropdown">
+												<table class="composition__table">
+													<tbody class="tbody">
+														<tr class="composition__table-row">
+															<td class="composition__table-cell">
+																<div class="icon-beef icon-beef-dims"></div>
+															</td>
+															<td class="composition__table-cell composition__table-cell_bold">
+																Говядина
+															</td>
+															<td class="composition__table-cell">
+																300г
+															</td>
+														</tr>
+														<tr class="composition__table-row">
+															<td class="composition__table-cell">
+																<div class="icon-buns icon-buns-dims"></div>
+															</td>
+															<td class="composition__table-cell composition__table-cell_bold">
+																Булочки
+															</td>
+															<td class="composition__table-cell">
+																100г
+															</td>
+														</tr>
+														<tr class="composition__table-row">
+															<td class="composition__table-cell">
+																<div class="icon-salad icon-salad-dims"></div>
+															</td>
+															<td class="composition__table-cell composition__table-cell_bold">
+																Зелень
+															</td>
+															<td class="composition__table-cell">
+																70г
+															</td>
+														</tr>
+														<tr class="composition__table-row">
+															<td class="composition__table-cell">
+																<div class="icon-sauce icon-sauce-dims"></div>
+															</td>
+															<td class="composition__table-cell composition__table-cell_bold">
+																Соус
+															</td>
+															<td class="composition__table-cell">
+																150г
+															</td>
+														</tr>
+														<tr class="composition__table-row">
+															<td class="composition__table-cell">
+																<div class="icon-cucumber icon-cucumber-dims"></div>
+															</td>
+															<td class="composition__table-cell composition__table-cell_bold">
+																Овощи
+															</td>
+															<td class="composition__table-cell">
+																200г
+															</td>
+														</tr>
+														<tr class="composition__table-row">
+															<td class="composition__table-cell">
+																<div class="icon-cheese icon-cheese-dims"></div>
+															</td>
+															<td class="composition__table-cell composition__table-cell_bold">
+																Сыр
+															</td>
+															<td class="composition__table-cell">
+																80г
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
 										</div>
 										<div class="slider__burger">
-											<img class="slider__burder-pic" src="img/content/dark-burger.png" alt="">
-										</div>									
+											<img class="slider__burger-pic" src="img/content/dark-burger.png" alt="">
+										</div>
+										<div class="burger-energy">											
+											<div class="burger-energy__icon icon-kkal icon-kkal-dims">
+												<div class="burger-eregy__weight">1200</div>
+											</div>
+											<div class="burger-energy__title">
+												ккал
+											</div>											
+										</div>
 									</div>
 									<div class="slider__item-right">
-										<div class="section__title section__title_white">
-											dark beef burger
-										</div>
-										<div class="slider__desc">
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ipsam impedit laudantium in repudiandae excepturi quo accusantium odit id, sequi facilis eum quos aliquam nobis.
-											</p>
-										</div>
-										<div class="slider__info">
-											<div class="slider__price">
-												500 рублей
+											<div class="section__title section__title_white">
+												dark beef burger
 											</div>
-											<a href="#" class="slider__btn">Заказать</a>
-										</div>
-									</div>
-								</li>
-							</ul>
+											<div class="slider__desc">
+												<p>
+													Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+												</p>
+											</div>
+											<div class="slider__info">
+												<div class="slider__price">
+													500<span class="slider__price-small"> рублей</span>
+												</div>
+												<a href="#" class="slider__info-btn">Заказать</a>
+											</div>
+										</div>											
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>	
 				</div>
 			</section>
-			<section class="section team">
-				<div class="container">
-					<div class="team__right">
-						<div class="section__title">Команда</div>
-						<div class="team-accord">
-							<ul class="team-accord__list">
-								<li class="team-accord__item">
-									<a href="#" class="team-acco__trigger">Дэниэл редклиф</a>
-									<div class="team-acco__content">
-										<div class="team-acco__pic" style="background-image: url(#); "></div>
-										<div class="team-acco__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eos culpa inventore consectetur consequuntur corrupti omnis mollitia minus neque, distinctio perspiciatis reprehenderit doloremque sapiente dignissimos.</div>
+			<section class="section team">				
+				<div class="team__right">
+					<div class="section__title">Команда</div>
+					<div class="team-accord">
+						<ul class="team-accord__list">
+							<li class="team-accord__item team-accord__item_open">
+								<a href="#" class="team-accord__trigger">Дэниэл редклиф</a>
+								<div class="team-accord__content">
+									<div class="team-accord__pic" style="background-image: url(img/content/team-accord-pic.jpg); "></div>
+									<div class="team-accord__info">
+										<div class="team-accord__vacansy">Оператор</div>
+										<div class="team-accord__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eos culpa inventore consectetur consequuntur corrupti omnis mollitia minus neque, distinctio perspiciatis reprehenderit doloremque sapiente dignissimos.</div>
 									</div>
-								</li>
-								<li class="team-accord__item">
-									<a href="#" class="team-acco__trigger">Дэниэл редклиф</a>
-									<div class="team-acco__content">
-										<div class="team-acco__pic" style="background-image: url(#); "></div>
-										<div class="team-acco__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eos culpa inventore consectetur consequuntur corrupti omnis mollitia minus neque, distinctio perspiciatis reprehenderit doloremque sapiente dignissimos.</div>
+								</div>
+							</li>
+							<li class="team-accord__item">
+								<a href="#" class="team-accord__trigger">Ричард Джеймс</a>
+								<div class="team-accord__content">
+									<div class="team-accord__pic" style="background-image: url(img/content/team-accord-pic.jpg); "></div>
+									<div class="team-accord__info">
+										<div class="team-accord__vacansy">Оператор</div>
+										<div class="team-accord__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eos culpa inventore consectetur consequuntur corrupti omnis mollitia minus neque, distinctio perspiciatis reprehenderit doloremque sapiente dignissimos.</div>
 									</div>
-								</li>
-								<li class="team-accord__item">
-									<a href="#" class="team-acco__trigger">Дэниэл редклиф</a>
-									<div class="team-acco__content">
-										<div class="team-acco__pic" style="background-image: url(#); "></div>
-										<div class="team-acco__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eos culpa inventore consectetur consequuntur corrupti omnis mollitia minus neque, distinctio perspiciatis reprehenderit doloremque sapiente dignissimos.</div>
+								</div>
+							</li>
+							<li class="team-accord__item">
+								<a href="#" class="team-accord__trigger">Джей Финн</a>
+								<div class="team-accord__content">
+									<div class="team-accord__pic" style="background-image: url(img/content/team-accord-pic.jpg); "></div>
+									<div class="team-accord__info">
+										<div class="team-accord__vacansy">Оператор</div>
+										<div class="team-accord__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eos culpa inventore consectetur consequuntur corrupti omnis mollitia minus neque, distinctio perspiciatis reprehenderit doloremque sapiente dignissimos.</div>
 									</div>
-								</li>
-								<li class="team-accord__item">
-									<a href="#" class="team-acco__trigger">Дэниэл редклиф</a>
-									<div class="team-acco__content">
-										<div class="team-acco__pic" style="background-image: url(#); "></div>
-										<div class="team-acco__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eos culpa inventore consectetur consequuntur corrupti omnis mollitia minus neque, distinctio perspiciatis reprehenderit doloremque sapiente dignissimos.</div>
+								</div>
+							</li>
+							<li class="team-accord__item">
+								<a href="#" class="team-accord__trigger">Николай Иванов</a>
+								<div class="team-accord__content">
+									<div class="team-accord__pic" style="background-image: url(img/content/team-accord-pic.jpg); "></div>
+									<div class="team-accord__info">
+										<div class="team-accord__vacansy">Оператор</div>
+										<div class="team-accord__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eos culpa inventore consectetur consequuntur corrupti omnis mollitia minus neque, distinctio perspiciatis reprehenderit doloremque sapiente dignissimos.</div>
 									</div>
-								</li>
-							</ul>
-						</div>  
-					</div>
+								</div>
+							</li>														
+						</ul>
+					</div>  					
 				</div>
 			</section>
-			<section class="section menu">
-				<div class="container">
-					<div class="section__header section__header_white">
-						меню
-					</div>
-					<div class="menu-accord">
-						<ul class="menu-accord__list">
-							<li class="menu-accord__item menu-accord__item_open">
-								<div class="menu-accord__title">
-									Для мясоедов
-								</div>
-								<div class="menu-accord__desc">
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque dignissimos id dolorum quas excepturi consequatur debitis architecto. Laboriosam eaque molestias, at amet repellat eius repudiandae.
-									</p>
-								</div>
-							</li>
-							<li class="menu-accord__item menu-accord__item_open">
-								<div class="menu-accord__title">
-									вегетарианское
-								</div>
-								<div class="menu-accord__desc">
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque dignissimos id dolorum quas excepturi consequatur debitis architecto. Laboriosam eaque molestias, at amet repellat eius repudiandae.
-									</p>
-								</div>
-							</li>
-							<li class="menu-accord__item menu-accord__item_open">
-								<div class="menu-accord__title">
-									диетическое
-								</div>
-								<div class="menu-accord__desc">
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque dignissimos id dolorum quas excepturi consequatur debitis architecto. Laboriosam eaque molestias, at amet repellat eius repudiandae.
-									</p>
-								</div>
-							</li>
-						</ul>
-					</div>
+			<section class="section menu">				
+				<div class="section__title section__title_white">
+					меню
 				</div>
+				<div class="menu-accord">
+					<ul class="menu-accord__list">
+						<li class="menu-accord__item menu-accord__item_open">
+							<a href="#" style="background-image: url('img/bg/sub-menu-meet.jpg');" class="menu-accord__trigger">
+								<div class="menu-accord__title" >Для мясоедов</div>
+							</a>
+							<div class="menu-accord__content">
+								<div class="menu-accord__desc">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque dignissimos id dolorum quas excepturi consequatur debitis architecto. Laboriosam eaque molestias, at amet repellat eius repudiandae.
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="menu-accord__item" >
+							<a href="#" class="menu-accord__trigger" style="background-image: url('img/bg/submenu-vegan.jpg');">
+								<div class="menu-accord__title">вегетарианское</div>
+							</a>
+							<div class="menu-accord__content">
+								<div class="menu-accord__desc">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque dignissimos id dolorum quas excepturi consequatur debitis architecto. Laboriosam eaque molestias, at amet repellat eius repudiandae.
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="menu-accord__item">
+							<a href="#" class="menu-accord__trigger" style="background-image: url('img/bg/submenu-diet.jpg');"><div class="menu-accord__title">
+								диетическое
+							</div>
+						</a>
+						<div class="menu-accord__content">
+							<div class="menu-accord__desc">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque dignissimos id dolorum quas excepturi consequatur debitis architecto. Laboriosam eaque molestias, at amet repellat eius repudiandae.
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+				</div>				
 			</section>
 			<section class="section person">
 				<div class="person__inner">

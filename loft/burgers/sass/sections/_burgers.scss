@@ -6,16 +6,169 @@
 	top: 50%;
 	transform: translateY(-50%);
 }
-.slider {
-	font-size: 0;
+
+.slider__inner {
+	position: relative;
 }
 .slider__btn {
-	@include inline-block(middle);
-	width: 50%;
+	@include inline-block(middle);	
+	position: absolute;
+	top: 50%;
+	trasform: translateY(-50%);
+	&_prew {
+		right: 100%;		
+	}
+	&_next {
+		left: 100%;		
+	}	
 }
 .slider__btn_prew .slider__btn-pic {
 	transform: rotate(90deg);	
 }
 .slider__btn_next .slider__btn-pic {
 	transform: rotate(-90deg);	
+}
+.slider__item {
+	@extend %clearfix;
+}
+.slider__item-left {
+	width: 50%;
+	float: left;
+}
+.slider__item-right {
+	@extend .slider__item-left;
+	& .section__title {
+		margin-bottom: 55px;
+	}	
+}
+.composition {
+	display: inline-block;
+	background-color: #f08c33;
+	padding: 10px 20px;	
+	text-align: center;
+	border-radius: 7px;
+	position: relative;
+	cursor: pointer;
+	transition: .3s;
+	&:hover {
+		background-color: #e35028;
+		.composition__dropdown {
+			left: 100%;
+			opacity: 1;
+		}
+	}
+}
+.composition__icon {
+	display: block;
+	height: 45px;
+	width: 45px;
+}
+.composition__text {
+	@include inline-block(middle);
+	font-family: 'gagalinregular';
+	font-size: .875rem;
+	line-height: 1.3rem;
+}
+.composition__dropdown {	
+	padding: 20px;
+	border-radius: 7px;
+	background: rgba(255,255,255,.9);
+	position: absolute;
+	left: 99999999px;
+	top: 0;
+	width: 270px;
+	opacity: 0;
+	transition: opacity .2s;
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		right: 100%;
+		top: 0;
+		width: 30px;
+		height: 100%;		
+	}
+}
+.composition__table {
+	width: 100%;
+}
+.composition__table-cell {
+	color: $black;
+	padding: 8px 0;
+	vertical-align: middle;
+	font-size: .875rem;
+	&_bold {
+		font-family: 'ubuntumedium';
+		text-align: left;
+	}
+}
+.slider__burger {
+ 	overflow: hidden;
+}
+.slider__burger-pic {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.slider__energy {
+
+}
+.slider__desc {
+	margin-bottom: 55px;
+	& p {
+		margin: 0;
+		font-size: .875rem;
+		line-height: 1.75rem;
+	}
+}
+.slider__info {
+	text-align: left;
+	width: 100%;
+}
+.slider__price {
+	font-family: 'gagalinregular';
+	font-size: 4.5rem;
+	line-height: 1.75rem;
+	color: $orange;
+	@include inline-block(middle);	
+}
+.slider__price-small {
+	font-size: 1.875rem;
+}
+.slider__info-btn {
+	@include inline-block(middle);
+	font-family: 'ubuntumedium';
+	font-size: .81rem;
+	line-height: 1.875rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 3px 15px;
+	background-color: $orange;
+	border-radius: 7px;
+	color: #fff;
+	margin-left: 30px;
+}
+.burger-energy {
+	@include inline-block(middle);
+	opacity: .5;	
+}
+.burger-energy__icon {
+	position: relative;
+}
+
+.burger-eregy__weight {
+	font-family: 'gagalinregular';
+	text-align: center;
+	font-size: 1.25rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 8px;
+	text-align: center;
+	z-index: 20;
+}
+.burger-energy__title {
+	font-family: 'gagalinregular';
+	text-align: center;
+	font-size: .875rem;
 }

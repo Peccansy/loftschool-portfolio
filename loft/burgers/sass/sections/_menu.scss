@@ -1,0 +1,70 @@
+.menu {
+	background: transparent url('../img/bg/bg-menu.jpg') 50% 50% no-repeat;
+	background-size: cover;
+	.section__title {
+		position: absolute;
+		top:10%;
+		left: 10%;
+	}
+}
+.menu-accord__list {
+	font-size: 0;	
+	float: right;
+	height: 100vh;
+	min-height: 650px;
+}
+.menu-accord__item {
+	float: left;		
+	height: 100%;
+	font-size: 0;
+	&_open {
+		.menu-accord__content {
+			width: 540px;
+		}
+		.menu-accord__title {
+			color: $yellow;
+			transform: rotate(-90deg) translateX(-40%);
+		}
+	}
+}
+.menu-accord__trigger{
+	display: block;
+	width: 80px;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+.menu-accord__title {
+	@include inline-block(middle);
+	font-family: 'gagalinregular';
+	font-size: 2.5rem;
+	line-height: 4rem;
+	color: #fff;
+	width: 650px;
+	height: 80px;
+	transform: rotate(-90deg);
+	text-align: center;
+	position: absolute;
+	top: 50%;	
+	left: -275px;
+	transition: .5s;
+}
+.menu-accord__content {
+	float: left;
+	height: 100%;
+	width: 0;
+	background-color: rgba(47,50,52,.93);
+	overflow: hidden;
+	transition: width .5s;
+}
+.menu-accord__desc {
+	font-size: 1rem;
+	padding: 60px 30px;
+	p {
+		margin: 0;
+	}
+}
