@@ -1,0 +1,60 @@
+.footer {
+	background:transparent url('../img/bg/bg-footer.jpg') 50% 50% no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 60px;
+	overflow: hidden;
+}
+.footer__left {
+	width: 50%;
+	float: left;
+}
+.footer__contacts {
+	padding: 5px 0;
+}
+.footer__adress {
+	line-height: 1.5rem;
+	font-size: .875rem;
+}
+.footer__icon, .footer__text {
+ 	@include inline-block(middle);
+}
+.footer__icon {
+	vertical-align: baseline;
+	margin-right: 10px;
+}
+.footer__phone {
+	font-family: 'ubuntubold';
+	font-size: .875rem;
+	line-height: 1.5rem;
+	color: $orange;
+}
+.footer__right {
+	width: 50%;
+	float: right;
+}
+.footer__socials {
+	text-align: right;
+	font-size: 0;
+}
+.footer__item {
+	@include inline-block(middle);
+	font-size: 1rem;
+	margin-left: 20px;
+	line-height: 60px;	
+}
+.footer__link {
+	display: inline-block;    
+    vertical-align: middle;
+    overflow: hidden;
+    fill: gray;
+    transition: fill .3s;
+    svg:not(:root) {
+    	display: block;
+    }
+    &:hover {
+    	fill: #fff;
+    }    
+	
+}
+

@@ -1,0 +1,126 @@
+.order {
+	background:transparent url('../img/bg/bg-form.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+.order__inner {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	.section__title {
+		text-align: center;
+		margin-bottom: 70px;
+	}
+}
+.order__form {
+	margin-left: -20px;
+	font-size: 0;
+}
+.order__form-col {
+	@include inline-block(top);
+	width: calc(100%/2 - 20px);
+	margin-left: 20px;	
+}
+.order__form-row {
+	margin-bottom: 10px;
+}
+.order__form-elem {
+	@include inline-block(middle);
+	font-size: .875rem;
+	line-height: 1.5rem;	
+	width: calc(100%/1 - 20px);
+	margin: 0 10px;
+	&_2 {
+		width: calc(100%/2 - 20px);
+	}
+	&_4 {
+		width: calc(100%/4 - 20px)
+	}
+}
+.order__form-label {
+	display: block;
+}
+.order__form-input {
+	width: 100%;
+	border: 2px solid transparent;
+	border-radius: 5px;
+	outline: none;
+	padding: 7px 20px;
+	transition: .2s;
+	&:active, &:focus {
+		border-color: $yellow;
+	}
+
+}
+.order__radio {
+	display: inline-block;	
+	position: relative;
+	cursor: pointer;
+	&_check {
+		.order__radio-decor {
+			border-radius: 0;
+			border: 1px solid #fff;
+			transition: none;
+		}
+		.order__radio-elem:checked + .order__radio-decor{
+			background:#FFF url('../img/icons/check.svg') 50% 50% no-repeat;
+			background-size: contain;			
+		}
+	}
+}
+.order__radio-label {
+	font-size: .875rem;
+	line-height: 1.5rem;
+	position: absolute; 
+	top: -3px;
+    left: 30px;
+    width: 140px;
+}
+.order__radio-elem {
+	display: none;
+	&:checked + .order__radio-decor{
+		background-color: $orange;
+	} 	
+}
+.order__radio-decor {
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	border: 4px solid #fff;
+	border-radius: 50%;
+	background-color: #fff;
+	transition: .3s;	
+}
+.order__form-textarea {
+	width: 100%;
+	border: 2px solid transparent;
+	border-radius: 5px;
+	outline: none;
+	resize: none;
+	height: 100px;
+	transition: .3s;
+	&:active, &:focus {
+		border-color: $yellow;
+	}
+}
+.order__form-btn {
+	display: inline-block;
+	padding: 3px 15px;
+	font-family: 'ubuntumedium';
+	font-size: .81rem;
+	line-height: 1.875rem;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: $orange;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-left: 10px;
+	outline: none;
+	&_reset {
+		background-color: transparent;
+		font-family: 'ubuntulight';
+		text-transform: capitalize;
+		margin-left: 20px;
+	}
+}

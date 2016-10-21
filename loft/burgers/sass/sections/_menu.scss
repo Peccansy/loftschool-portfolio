@@ -19,11 +19,14 @@
 	font-size: 0;
 	&_open {
 		.menu-accord__content {
-			width: 540px;
+			width: 540px;			
 		}
 		.menu-accord__title {
 			color: $yellow;
-			transform: rotate(-90deg) translateX(-40%);
+			transform: rotate(-90deg) translateX(-35%);
+		}
+		.menu-accord__desc {
+			opacity: 1;
 		}
 	}
 }
@@ -64,7 +67,11 @@
 .menu-accord__desc {
 	font-size: 1rem;
 	padding: 60px 30px;
+	opacity: 0;
+	width: 540px;
+	transition: opacity .5s;
 	p {
 		margin: 0;
+
 	}
 }
