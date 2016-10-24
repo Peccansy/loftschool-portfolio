@@ -174,7 +174,7 @@ ul {
   display: none;
 }
 
-.nav__item_order {
+.nav__item_order .nav__link {
   padding: 3px 15px;
   background-color: #e45028;
   border-radius: 7px;
@@ -184,7 +184,12 @@ ul {
   display: none;
 }
 
+.nav__item_order:hover .nav__link, .nav__item_order:active .nav__link {
+  background-color: #c1401e;
+}
+
 .nav__link {
+  display: inline-block;
   font: .81rem/1.875rem 'ubuntumedium';
   text-decoration: none;
   color: #fff;
@@ -373,11 +378,11 @@ ul {
   transition: .3s;
 }
 
-.composition:hover {
+.composition:hover, .composition:active {
   background-color: #e35028;
 }
 
-.composition:hover .composition__dropdown {
+.composition:hover .composition__dropdown, .composition:active .composition__dropdown {
   left: 100%;
   opacity: 1;
 }
@@ -487,6 +492,10 @@ ul {
   margin-left: 30px;
 }
 
+.slider__info-btn:hover, .slider__info-btn:active {
+  background-color: #c1401e;
+}
+
 .burger-energy {
   display: inline-block;
   vertical-align: middle;
@@ -527,6 +536,11 @@ ul {
   height: 100%;
   padding: 100px 80px 0;
   background-color: rgba(47, 50, 52, 0.93);
+}
+
+.team-accord {
+  max-height: 500px;
+  overflow: hidden;
 }
 
 .team-accord__item {
@@ -604,11 +618,6 @@ ul {
 .team-accord__vacansy {
   font-family: 'ubuntumedium';
   margin-bottom: 25px;
-}
-
-.team-accord__text {
-  max-height: 115px;
-  overflow-y: auto;
 }
 
 .menu {
@@ -721,7 +730,7 @@ ul {
   background-size: cover;
 }
 
-.person__item:hover .person__item-inner {
+.person__item:hover .person__item-inner, .person__item:active .person__item-inner {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
@@ -760,6 +769,11 @@ ul {
   color: #fff;
   text-transform: uppercase;
   background-color: #2f3234;
+  border-radius: 5px;
+}
+
+.person__btn:hover, .person__btn:active {
+  background-color: #1f2122;
 }
 
 .person__popup {
@@ -948,11 +962,19 @@ ul {
   outline: none;
 }
 
+.order__form-btn:hover, .order__form-btn:active {
+  background-color: #c1401e;
+}
+
 .order__form-btn_reset {
   background-color: transparent;
   font-family: 'ubuntulight';
   text-transform: capitalize;
   margin-left: 20px;
+}
+
+.order__form-btn_reset:hover, .order__form-btn_reset:active {
+  background-color: transparent;
 }
 
 .order__modal {
@@ -1010,6 +1032,10 @@ ul {
   text-transform: uppercase;
   background-color: #e45028;
   border-radius: 5px;
+}
+
+.order__modal-btn:hover, .order__modal-btn:active {
+  background-color: #c1401e;
 }
 
 .map {

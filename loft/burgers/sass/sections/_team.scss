@@ -10,6 +10,10 @@
 	padding: 100px 80px 0;
 	background-color: rgba(47,50,52,.93);
 }
+.team-accord {
+	max-height: 500px;
+	overflow: hidden;
+}
 .team-accord__item {
 	padding-left: 22px;
 	margin-bottom: 25px;
@@ -76,8 +80,4 @@
 .team-accord__vacansy {
 	font-family: 'ubuntumedium';
 	margin-bottom: 25px;
-}
-.team-accord__text {
-	max-height: 115px;
-	overflow-y: auto;
 }

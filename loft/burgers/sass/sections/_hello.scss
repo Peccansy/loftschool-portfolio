@@ -49,15 +49,23 @@
 		display: none;
 	}
 	&_order {
-		padding: 3px 15px;
-		background-color: $orange;
-		border-radius: 7px;
+		.nav__link{			
+			padding: 3px 15px;
+			background-color: $orange;
+			border-radius: 7px;
+		}
 		&:before {
 			display: none;
+		}
+		&:hover,&:active{			
+			.nav__link{				
+				background-color: #c1401e;				
+			}
 		}
 	}
 }
 .nav__link {
+	display: inline-block;
 	font: .81rem/1.875rem 'ubuntumedium';
 	text-decoration: none;
 	color: #fff;
@@ -81,11 +89,6 @@
 .hello__desc {
 	font: 4.06rem/3.75rem 'lifehackmedium';
 }
-// .hello__pic {
-// 	display: block;
-// 	height: 370px;
-// 	width: 460px;
-// }
 .hello__arrow {
 	display: inline-block;
 	position: absolute;

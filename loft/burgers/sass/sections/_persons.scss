@@ -12,7 +12,7 @@
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-size: cover;	
-	&:hover {
+	&:hover,&:active {
 		.person__item-inner {
 			transform: scale(1);
 			opacity: 1;
@@ -46,6 +46,10 @@
 	color: #fff;
 	text-transform: uppercase;
 	background-color: #2f3234;
+	border-radius: 5px;
+	&:hover,&:active {
+		background-color: #1f2122;
+	}
 }
 .person__popup {
 	font-size: 1rem;

@@ -50,7 +50,7 @@
 	position: relative;
 	cursor: pointer;
 	transition: .3s;
-	&:hover {
+	&:hover,&:active {
 		background-color: #e35028;
 		.composition__dropdown {
 			left: 100%;
@@ -147,6 +147,9 @@
 	border-radius: 7px;
 	color: #fff;
 	margin-left: 30px;
+	&:hover,&:active {
+		background-color: #c1401e;
+	}
 }
 .burger-energy {
 	@include inline-block(middle);
@@ -155,7 +158,6 @@
 .burger-energy__icon {
 	position: relative;
 }
-
 .burger-eregy__weight {
 	font-family: 'gagalinregular';
 	text-align: center;
