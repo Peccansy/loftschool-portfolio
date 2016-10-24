@@ -84,10 +84,9 @@ window.onload = function () {
 			if(e.target == container || e.target == closeItem) { 
 				container.classList.toggle('person__popup_open');
 				container.removeEventListener('click', closeToggle);
-			} else {return}					
+			} else {return}				
 
-		}		
-
+		}
 	}	
 
 	var personButtons = document.querySelectorAll('.person__btn');	
@@ -97,3 +96,64 @@ window.onload = function () {
 	}
 
 }
+$(function () {
+
+	var sections = $('.section'),
+		onScreen = $('.content'),		
+		scroll = false,
+		activeSection,
+		screen = 0;	
+
+	// FIXED NAV VARS
+	var navItem = $('.page-nav__item'),
+	 	itemLink = $('.page-nav__link'),
+	 	parent;			
+
+	var scrollSection = function (sectionEq) {
+		var pos;
+
+		if (screen < 0) { return false }
+
+		pos = (sections.eq(sectionEq).index() * - 100) + '%';
+		sections.eq(sectionEq).addClass('section_active').siblings().removeClass('section_active')
+		onScreen.css({
+			'transform' : 'translate3d(0, ' + pos + ',0)'
+		});			
+	}
+
+	document.querySelector('.wrapper').addEventListener('wheel', function(e) {
+		e.preventDefault();
+		activeSection = sections.filter('.section_active');
+		if (!scroll) {
+
+			scroll =  true;
+			if (e.deltaY > 0) {
+				//вниз				
+				screen = activeSection.next().index();							
+				navItem.eq(screen).addClass('page-nav__item_active').siblings().removeClass('page-nav__item_active');				
+			}
+
+			if (e.deltaY < 0) {
+				//вверх	
+				screen = activeSection.prev().index();
+				navItem.eq(screen).addClass('page-nav__item_active').siblings().removeClass('page-nav__item_active');	
+			}	
+			scrollSection(screen);
+		}
+
+	setTimeout(function() { scroll = false; }, 1200);		
+	});
+
+	navItem.on('click', itemLink, function() {
+		parent = $(this).closest(navItem);
+		parent.addClass('page-nav__item_active')
+				.siblings()
+				.removeClass('page-nav__item_active');
+		screen = parent.index();
+		scrollSection(screen);
+	});
+
+	$('.hello__arrow').on('click', function() {
+		scrollSection(1);
+	});
+});

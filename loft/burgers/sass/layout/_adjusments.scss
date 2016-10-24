@@ -5,6 +5,7 @@ body, html {
 	background-color: #313436;
 	color: #fff;
 	font: 16px/1.42 'ubuntulight';
+	height: 100%;
 }
 h1,
 h2,
@@ -23,8 +24,13 @@ ul {
 .wrapper {
 	width: 100%;
 	min-width: 950px;
-	min-height: 100%;
+	height: 100%;
 	overflow: hidden;
+}
+.content {
+	height: 100%;
+	transform: translate3d(0, 0, 0);
+	transition: 1s;
 }
 .container {
 	width: 940px;
