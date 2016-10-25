@@ -67,8 +67,7 @@ window.onload = function () {
 
 	// POPUPS
 	function popUp(e) {
-		e.preventDefault();
-		
+		e.preventDefault();	 	
 		var btn = this;
 		var popUp = btn.closest('.person__item').querySelector('.person__popup');
 		
@@ -105,8 +104,7 @@ $(function () {
 
 	var scrollSection = function (sectionEq) {
 		var pos;
-		if (sectionEq < 0) { return false }
-
+			
 		pos = (sections.eq(sectionEq).index() * - 100) + '%';
 		sections.eq(sectionEq).addClass('section_active').siblings().removeClass('section_active')
 		onScreen.css({
@@ -126,19 +124,24 @@ $(function () {
 		document.querySelector('.wrapper').addEventListener('wheel', function(e) {
 		e.preventDefault();
 
+		if ($('.person__popup').is('.person__popup_open')) { return false } // отключаем прокрутку если открыт попап
+
 		activeSection = sections.filter('.section_active');
 		if (!scroll) {
 
 			scroll =  true;
 			if (e.deltaY > 0) {
 				//вниз				
-				screen = activeSection.next().index();								
+				screen = activeSection.next().index();
+				if(screen == -1) screen = sections.length - 1;								
 			}
 
 			if (e.deltaY < 0) {
 				//вверх	
-				screen = activeSection.prev().index();					
+				screen = activeSection.prev().index();
+				if(screen == -1) screen = 0;						
 			}	
+			
 			scrollSection(screen);
 		}
 		
@@ -161,12 +164,10 @@ $(function () {
 	var sliderItems = $('.slider__item'),
 		activeItem = sliderItems.filter('.slider__item_active'),
 		container = sliderItems.closest('.slider__list'),
-		itemIndex = 0;
-		console.log(activeItem)
+		itemIndex = 0;		
 		var slide = function (slideEq) {
 			var position;			
-			position = slideEq * -100 + '%';
-			console.log(position);
+			position = slideEq * -100 + '%';			
 			container.css({
 				'transform':'translate3d('+ position +',0,0)'
 			});
@@ -186,13 +187,11 @@ $(function () {
 
 			if(clickedBtn.is('.slider__btn_prev')) {				
 				itemIndex = activeItem.prev().index();
-
 				if (itemIndex == -1) itemIndex = sliderItems.length - 1;			
 			}
 
 			if(clickedBtn.is('.slider__btn_next')) {				
-				itemIndex = activeItem.next().index();
-				console.log(itemIndex)
+				itemIndex = activeItem.next().index();				
 				if (itemIndex == -1) itemIndex = 0;
 			}
 

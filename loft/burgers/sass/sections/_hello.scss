@@ -111,6 +111,12 @@
 			height: 16px;
 		}	
 	}
+	&:hover {
+		.page-nav__link:after {
+			width: 16px;
+			height: 16px;
+		}
+	}
 }
 .page-nav__link {
 	position: relative;
