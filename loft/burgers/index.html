@@ -27,25 +27,25 @@
 							<nav class="nav">
 								<ul class="nav__list">
 									<li class="nav__item">
-										<a href="#" class="nav__link">о нас</a>
+										<a href="1" class="nav__link">о нас</a>
 									</li>
 									<li class="nav__item">
-										<a href="#" class="nav__link">бургеры</a>
+										<a href="2" class="nav__link">бургеры</a>
 									</li>
 									<li class="nav__item">
-										<a href="#" class="nav__link">команда</a>
+										<a href="3" class="nav__link">команда</a>
 									</li>
 									<li class="nav__item">
-										<a href="#" class="nav__link">меню</a>
+										<a href="4" class="nav__link">меню</a>
 									</li>
 									<li class="nav__item">
-										<a href="#" class="nav__link">отзывы</a>
+										<a href="5" class="nav__link">отзывы</a>
 									</li>
 									<li class="nav__item">
-										<a href="#" class="nav__link">контакты</a>
+										<a href="7" class="nav__link">контакты</a>
 									</li>
 									<li class="nav__item nav__item_order">
-										<a href="#" class="nav__link">заказать</a>
+										<a href="6" class="nav__link">заказать</a>
 									</li>
 								</ul>
 							</nav>
@@ -135,129 +135,353 @@
 		<section class="section burgers">			
 			<div class="burgers__inner">
 				<div class="slider">
-					<div class="container">
-						<div class="slider__inner">
-							<div class="slider__controls">
-								<a href="#" class="slider__btn slider__btn_prew">
-									<img src="img/icons/arrow-scroll.svg" alt="left arrow" class="slider__btn-pic">
-								</a>
-								<a href="#" class="slider__btn slider__btn_next">
-									<img src="img/icons/arrow-scroll.svg" alt="right arrow" class="slider__btn-pic">
-								</a>
-							</div>
-							<ul class="slider__list">
-								<li class="slider__item">
-									<div class="slider__item-left">
-										<div class="composition">
-											<div class="composition__icon">
-												<img class="composition__pic" src="img/icons/burger.svg" alt="burger">
-											</div>										
-											<div class="composition__text">
-												состав
-											</div>
-											<div class="composition__dropdown">
-												<table class="composition__table">
-													<tbody class="tbody">
-														<tr class="composition__table-row">
-															<td class="composition__table-cell">
-																<div class="icon-beef icon-beef-dims"></div>
-															</td>
-															<td class="composition__table-cell composition__table-cell_bold">
-																Говядина
-															</td>
-															<td class="composition__table-cell">
-																300г
-															</td>
-														</tr>
-														<tr class="composition__table-row">
-															<td class="composition__table-cell">
-																<div class="icon-buns icon-buns-dims"></div>
-															</td>
-															<td class="composition__table-cell composition__table-cell_bold">
-																Булочки
-															</td>
-															<td class="composition__table-cell">
-																100г
-															</td>
-														</tr>
-														<tr class="composition__table-row">
-															<td class="composition__table-cell">
-																<div class="icon-salad icon-salad-dims"></div>
-															</td>
-															<td class="composition__table-cell composition__table-cell_bold">
-																Зелень
-															</td>
-															<td class="composition__table-cell">
-																70г
-															</td>
-														</tr>
-														<tr class="composition__table-row">
-															<td class="composition__table-cell">
-																<div class="icon-sauce icon-sauce-dims"></div>
-															</td>
-															<td class="composition__table-cell composition__table-cell_bold">
-																Соус
-															</td>
-															<td class="composition__table-cell">
-																150г
-															</td>
-														</tr>
-														<tr class="composition__table-row">
-															<td class="composition__table-cell">
-																<div class="icon-cucumber icon-cucumber-dims"></div>
-															</td>
-															<td class="composition__table-cell composition__table-cell_bold">
-																Овощи
-															</td>
-															<td class="composition__table-cell">
-																200г
-															</td>
-														</tr>
-														<tr class="composition__table-row">
-															<td class="composition__table-cell">
-																<div class="icon-cheese icon-cheese-dims"></div>
-															</td>
-															<td class="composition__table-cell composition__table-cell_bold">
-																Сыр
-															</td>
-															<td class="composition__table-cell">
-																80г
-															</td>
-														</tr>
-													</tbody>
-												</table>
-											</div>
-										</div>
-										<div class="slider__burger">
-											<img class="slider__burger-pic" src="img/content/dark-burger.png" alt="">
-										</div>
-										<div class="burger-energy">											
-											<div class="burger-energy__icon icon-kkal icon-kkal-dims">
-												<div class="burger-eregy__weight">1200</div>
-											</div>
-											<div class="burger-energy__title">
-												ккал
-											</div>											
-										</div>
-									</div>
-									<div class="slider__item-right">
-											<div class="section__title section__title_white">
-												dark beef burger
-											</div>
-											<div class="slider__desc">
-												<p>
-													Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
-												</p>
-											</div>
-											<div class="slider__info">
-												<div class="slider__price">
-													500<span class="slider__price-small"> рублей</span>
+					<div class="slider__wrapper">
+						<div class="container">						
+							<div class="slider__inner">
+								<div class="slider__controls">
+									<a href="#" class="slider__btn slider__btn_prev">
+										<img src="img/icons/arrow-scroll.svg" alt="left arrow" class="slider__btn-pic">
+									</a>
+									<a href="#" class="slider__btn slider__btn_next">
+										<img src="img/icons/arrow-scroll.svg" alt="right arrow" class="slider__btn-pic">
+									</a>
+								</div>
+								<ul class="slider__list">
+									<li class="slider__item slider__item_active">
+										<div class="slider__item-left">
+											<div class="composition">
+												<div class="composition__icon">
+													<img class="composition__pic" src="img/icons/burger.svg" alt="burger">
+												</div>										
+												<div class="composition__text">
+													состав
 												</div>
-												<a href="#" class="slider__info-btn">Заказать</a>
+												<div class="composition__dropdown">
+													<table class="composition__table">
+														<tbody class="tbody">
+															<tr class="composition__table-row">
+																<td class="composition__table-cell">
+																	<div class="icon-beef icon-beef-dims"></div>
+																</td>
+																<td class="composition__table-cell composition__table-cell_bold">
+																	Говядина
+																</td>
+																<td class="composition__table-cell">
+																	300г
+																</td>
+															</tr>
+															<tr class="composition__table-row">
+																<td class="composition__table-cell">
+																	<div class="icon-buns icon-buns-dims"></div>
+																</td>
+																<td class="composition__table-cell composition__table-cell_bold">
+																	Булочки
+																</td>
+																<td class="composition__table-cell">
+																	100г
+																</td>
+															</tr>
+															<tr class="composition__table-row">
+																<td class="composition__table-cell">
+																	<div class="icon-salad icon-salad-dims"></div>
+																</td>
+																<td class="composition__table-cell composition__table-cell_bold">
+																	Зелень
+																</td>
+																<td class="composition__table-cell">
+																	70г
+																</td>
+															</tr>
+															<tr class="composition__table-row">
+																<td class="composition__table-cell">
+																	<div class="icon-sauce icon-sauce-dims"></div>
+																</td>
+																<td class="composition__table-cell composition__table-cell_bold">
+																	Соус
+																</td>
+																<td class="composition__table-cell">
+																	150г
+																</td>
+															</tr>
+															<tr class="composition__table-row">
+																<td class="composition__table-cell">
+																	<div class="icon-cucumber icon-cucumber-dims"></div>
+																</td>
+																<td class="composition__table-cell composition__table-cell_bold">
+																	Овощи
+																</td>
+																<td class="composition__table-cell">
+																	200г
+																</td>
+															</tr>
+															<tr class="composition__table-row">
+																<td class="composition__table-cell">
+																	<div class="icon-cheese icon-cheese-dims"></div>
+																</td>
+																<td class="composition__table-cell composition__table-cell_bold">
+																	Сыр
+																</td>
+																<td class="composition__table-cell">
+																	80г
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
 											</div>
-										</div>											
-									</li>
-								</ul>
+											<div class="slider__burger">
+												<img class="slider__burger-pic" src="img/content/dark-burger.png" alt="">
+											</div>
+											<div class="burger-energy">							
+												<div class="burger-energy__icon icon-kkal icon-kkal-dims">
+													<div class="burger-eregy__weight">1200</div>
+												</div>
+												<div class="burger-energy__title">
+													ккал
+												</div>											
+											</div>
+										</div>
+										<div class="slider__item-right">
+												<div class="section__title section__title_white">
+													dark beef burger
+												</div>
+												<div class="slider__desc">
+													<p>
+														Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+													</p>
+												</div>
+												<div class="slider__info">
+													<div class="slider__price">
+														500<span class="slider__price-small"> рублей</span>
+													</div>
+													<a href="#" class="slider__info-btn">Заказать</a>
+												</div>
+											</div>											
+										</li>
+										<li class="slider__item">
+										<div class="slider__item-left">
+											<div class="composition">
+												<div class="composition__icon">
+													<img class="composition__pic" src="img/icons/burger.svg" alt="burger">
+												</div>										
+												<div class="composition__text">
+													состав
+												</div>
+												<div class="composition__dropdown">
+													<table class="composition__table">
+														<tbody class="tbody">
+															<tr class="composition__table-row">
+																<td class="composition__table-cell">
+																	<div class="icon-beef icon-beef-dims"></div>
+																</td>
+																<td class="composition__table-cell composition__table-cell_bold">
+																	Говядина
+																</td>
+																<td class="composition__table-cell">
+																	300г
+																</td>
+															</tr>
+															<tr class="composition__table-row">
+																<td class="composition__table-cell">
+																	<div class="icon-buns icon-buns-dims"></div>
+																</td>
+																<td class="composition__table-cell composition__table-cell_bold">
+																	Булочки
+																</td>
+																<td class="composition__table-cell">
+																	100г
+																</td>
+															</tr>
+															<tr class="composition__table-row">
+																<td class="composition__table-cell">
+																	<div class="icon-salad icon-salad-dims"></div>
+																</td>
+																<td class="composition__table-cell composition__table-cell_bold">
+																	Зелень
+																</td>
+																<td class="composition__table-cell">
+																	70г
+																</td>
+															</tr>
+															<tr class="composition__table-row">
+																<td class="composition__table-cell">
+																	<div class="icon-sauce icon-sauce-dims"></div>
+																</td>
+																<td class="composition__table-cell composition__table-cell_bold">
+																	Соус
+																</td>
+																<td class="composition__table-cell">
+																	150г
+																</td>
+															</tr>
+															<tr class="composition__table-row">
+																<td class="composition__table-cell">
+																	<div class="icon-cucumber icon-cucumber-dims"></div>
+																</td>
+																<td class="composition__table-cell composition__table-cell_bold">
+																	Овощи
+																</td>
+																<td class="composition__table-cell">
+																	200г
+																</td>
+															</tr>
+															<tr class="composition__table-row">
+																<td class="composition__table-cell">
+																	<div class="icon-cheese icon-cheese-dims"></div>
+																</td>
+																<td class="composition__table-cell composition__table-cell_bold">
+																	Сыр
+																</td>
+																<td class="composition__table-cell">
+																	80г
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<div class="slider__burger">
+												<img class="slider__burger-pic" src="img/content/dark-burger.png" alt="">
+											</div>
+											<div class="burger-energy">							
+												<div class="burger-energy__icon icon-kkal icon-kkal-dims">
+													<div class="burger-eregy__weight">1200</div>
+												</div>
+												<div class="burger-energy__title">
+													ккал
+												</div>											
+											</div>
+										</div>
+										<div class="slider__item-right">
+												<div class="section__title section__title_white">
+													dark beef burger
+												</div>
+												<div class="slider__desc">
+													<p>
+														Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+													</p>
+												</div>
+												<div class="slider__info">
+													<div class="slider__price">
+														500<span class="slider__price-small"> рублей</span>
+													</div>
+													<a href="#" class="slider__info-btn">Заказать</a>
+												</div>
+											</div>											
+										</li>
+										<li class="slider__item">
+										<div class="slider__item-left">
+											<div class="composition">
+												<div class="composition__icon">
+													<img class="composition__pic" src="img/icons/burger.svg" alt="burger">
+												</div>										
+												<div class="composition__text">
+													состав
+												</div>
+												<div class="composition__dropdown">
+													<table class="composition__table">
+														<tbody class="tbody">
+															<tr class="composition__table-row">
+																<td class="composition__table-cell">
+																	<div class="icon-beef icon-beef-dims"></div>
+																</td>
+																<td class="composition__table-cell composition__table-cell_bold">
+																	Говядина
+																</td>
+																<td class="composition__table-cell">
+																	300г
+																</td>
+															</tr>
+															<tr class="composition__table-row">
+																<td class="composition__table-cell">
+																	<div class="icon-buns icon-buns-dims"></div>
+																</td>
+																<td class="composition__table-cell composition__table-cell_bold">
+																	Булочки
+																</td>
+																<td class="composition__table-cell">
+																	100г
+																</td>
+															</tr>
+															<tr class="composition__table-row">
+																<td class="composition__table-cell">
+																	<div class="icon-salad icon-salad-dims"></div>
+																</td>
+																<td class="composition__table-cell composition__table-cell_bold">
+																	Зелень
+																</td>
+																<td class="composition__table-cell">
+																	70г
+																</td>
+															</tr>
+															<tr class="composition__table-row">
+																<td class="composition__table-cell">
+																	<div class="icon-sauce icon-sauce-dims"></div>
+																</td>
+																<td class="composition__table-cell composition__table-cell_bold">
+																	Соус
+																</td>
+																<td class="composition__table-cell">
+																	150г
+																</td>
+															</tr>
+															<tr class="composition__table-row">
+																<td class="composition__table-cell">
+																	<div class="icon-cucumber icon-cucumber-dims"></div>
+																</td>
+																<td class="composition__table-cell composition__table-cell_bold">
+																	Овощи
+																</td>
+																<td class="composition__table-cell">
+																	200г
+																</td>
+															</tr>
+															<tr class="composition__table-row">
+																<td class="composition__table-cell">
+																	<div class="icon-cheese icon-cheese-dims"></div>
+																</td>
+																<td class="composition__table-cell composition__table-cell_bold">
+																	Сыр
+																</td>
+																<td class="composition__table-cell">
+																	80г
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+											<div class="slider__burger">
+												<img class="slider__burger-pic" src="img/content/dark-burger.png" alt="">
+											</div>
+											<div class="burger-energy">							
+												<div class="burger-energy__icon icon-kkal icon-kkal-dims">
+													<div class="burger-eregy__weight">1200</div>
+												</div>
+												<div class="burger-energy__title">
+													ккал
+												</div>											
+											</div>
+										</div>
+										<div class="slider__item-right">
+												<div class="section__title section__title_white">
+													dark beef burger
+												</div>
+												<div class="slider__desc">
+													<p>
+														Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+													</p>
+												</div>
+												<div class="slider__info">
+													<div class="slider__price">
+														500<span class="slider__price-small"> рублей</span>
+													</div>
+													<a href="#" class="slider__info-btn">Заказать</a>
+												</div>
+											</div>											
+										</li>
+									</ul>
+							</div>
 							</div>
 						</div>
 					</div>	
@@ -791,42 +1015,42 @@
 		<div class="page-nav page-nav_fixed">
 			<ul class="page-nav__list">
 				<li class="page-nav__item page-nav__item_active">
-					<a href="#" class="page-nav__link">
+					<a href="0" class="page-nav__link">
 						<span class="page-nav__circle"></span>
 					</a>
 				</li>
 				<li class="page-nav__item">
-					<a href="#" class="page-nav__link">
+					<a href="1" class="page-nav__link">
 						<span class="page-nav__circle"></span>
 					</a>
 				</li>
 				<li class="page-nav__item">
-					<a href="#" class="page-nav__link">
+					<a href="2" class="page-nav__link">
 						<span class="page-nav__circle"></span>
 					</a>
 				</li>
 				<li class="page-nav__item">
-					<a href="#" class="page-nav__link">
+					<a href="3" class="page-nav__link">
 						<span class="page-nav__circle"></span>
 					</a>
 				</li>
 				<li class="page-nav__item">
-					<a href="#" class="page-nav__link">
+					<a href="4" class="page-nav__link">
 						<span class="page-nav__circle"></span>
 					</a>
 				</li>
 				<li class="page-nav__item">
-					<a href="#" class="page-nav__link">
+					<a href="5" class="page-nav__link">
 						<span class="page-nav__circle"></span>
 					</a>
 				</li>
 				<li class="page-nav__item">
-					<a href="#" class="page-nav__link">
+					<a href="6" class="page-nav__link">
 						<span class="page-nav__circle"></span>
 					</a>
 				</li>
 				<li class="page-nav__item">
-					<a href="#" class="page-nav__link">
+					<a href="7" class="page-nav__link">
 						<span class="page-nav__circle"></span>
 					</a>
 				</li>
