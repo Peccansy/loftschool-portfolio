@@ -65,36 +65,37 @@ window.onload = function () {
 
 	};
 
-	// POPUPS
-	function popUp(e) {
-		e.preventDefault();	 	
-		var btn = this;
-		var popUp = btn.closest('.person__item').querySelector('.person__popup');
+	// // POPUPS
+	// function popUp(e) {
+	// 	e.preventDefault();	 	
+	// 	var btn = this;
+	// 	var popUp = btn.closest('.person__item').querySelector('.person__popup');
 		
-		popUp.classList.toggle('person__popup_open');		
-		close(popUp.querySelector('.person__popup-close'),popUp);
+	// 	popUp.classList.toggle('person__popup_open');		
+	// 	close(popUp.querySelector('.person__popup-close'),popUp);
 
-	}
+	// }
 
-	function close(closeItem,container) {		
-		container.addEventListener('click', closeToggle);
-		function closeToggle(e) {
+	// function close(closeItem,container) {		
+	// 	container.addEventListener('click', closeToggle);
+	// 	function closeToggle(e) {
 
-			if(e.target == container || e.target == closeItem) { 
-				container.classList.toggle('person__popup_open');
-				container.removeEventListener('click', closeToggle);
-			} else {return}				
+	// 		if(e.target == container || e.target == closeItem) { 
+	// 			container.classList.toggle('person__popup_open');
+	// 			container.removeEventListener('click', closeToggle);
+	// 		} else {return}				
 
-		}
-	}	
+	// 	}
+	// }	
 
-	var personButtons = document.querySelectorAll('.person__btn');	
+	// var personButtons = document.querySelectorAll('.person__btn');	
 
-	for (var personButton of personButtons) {
-		personButton.addEventListener('click', popUp);
-	}
+	// for (var personButton of personButtons) {
+	// 	personButton.addEventListener('click', popUp);
+	// }
 
 }
+
 
 
 $(function () {
@@ -151,9 +152,7 @@ $(function () {
 
 	$('.page-nav__link, .nav__link').on('click', function(e) {
 		e.preventDefault();
-
 	 	var href = parseInt($(this).attr('href'));
-
 		scrollSection(href);
 	});
 
@@ -199,8 +198,25 @@ $(function () {
 
 			if(itemIndex >= 0) slide(itemIndex);
 		});
-		//MASk 
-	 	 $('#phone').inputmask("+7 (999) 999-99-99"); 
+	//popUps
+	$('.person__btn').on('click', function(){
+		var btn = $(this);
+		var item = btn.closest('.person__item');
+		var popUp = item.find('.person__popup');
+		var closeIcon =	popUp.find('.person__popup-close');	
+		popUp.addClass('person__popup_open');
+		$(popUp).on('click', function(e){			
+   			if (popUp.has(e.target).length === 0){
+       			popUp.removeClass('person__popup_open');
+       		}
+		});
+		$(closeIcon).on('click', function(){
+			popUp.removeClass('person__popup_open');
+		});
+	});
+
+	//MASk 
+	$('#phone').inputmask("+7 (999) 999-99-99"); 
 
 	//YAMAP
 	ymaps.ready(init);
