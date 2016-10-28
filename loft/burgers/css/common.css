@@ -1099,12 +1099,19 @@ ul {
   background-color: #fff;
 }
 
+.map__inner {
+  height: 100%;
+}
+
 .footer {
   background: transparent url("../img/bg/bg-footer.jpg") 50% 50% no-repeat;
   background-size: cover;
   width: 100%;
   height: 60px;
   overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .footer__left {

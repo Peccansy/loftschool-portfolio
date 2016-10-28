@@ -7,7 +7,9 @@
 	<title>BURGERS</title>
 	<!-- STYLES -->
 	<link rel="stylesheet" href="vendors/css/vendors.min.css">
-	<link rel="stylesheet" href="css/common.min.css">	
+	<link rel="stylesheet" href="css/common.min.css">
+	<!-- SCRIPTS -->
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
 	<!--[if lte IE 9]
@@ -903,11 +905,9 @@
 					</div>
 				</div>
 			</section>
-			<section class="section map">
-
-			</section>
-		</div>
-		<footer class="footer">
+			<section class="section map-seciton">
+					<div class="map-seciton__inner" style="height: 100%" id="map"></div>
+					<footer class="footer">
 			<div class="footer__inner">
 				<div class="container">
 					<div class="footer__left">
@@ -1012,6 +1012,8 @@
 				</div>
 			</div>
 		</footer>
+			</section>
+		</div>		
 		<div class="page-nav page-nav_fixed">
 			<ul class="page-nav__list">
 				<li class="page-nav__item page-nav__item_active">
@@ -1058,6 +1060,7 @@
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="js/jquery.inputmask.bundle.js"></script>
 	<script src="js/common.js"></script>
 </body>
 </html>

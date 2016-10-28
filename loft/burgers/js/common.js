@@ -4,7 +4,7 @@ window.onload = function () {
 	parent;	
 	function toggleItem (e) {
 		e.preventDefault();		
-		var clicked = this;			
+		var clicked = this;		
 
 		items = clicked.closest('.team-accord__list').getElementsByClassName('team-accord__item');
 		parent = clicked.closest('.team-accord__item');	
@@ -95,6 +95,8 @@ window.onload = function () {
 	}
 
 }
+
+
 $(function () {
 	var sections = $('.section'),
 		onScreen = $('.content'),		
@@ -197,5 +199,65 @@ $(function () {
 
 			if(itemIndex >= 0) slide(itemIndex);
 		});
+		//MASk 
+	 	 $('#phone').inputmask("+7 (999) 999-99-99"); 
+
+	//YAMAP
+	ymaps.ready(init);
+    var myMap,placemark;
+    	
+
+    function init(){     
+        myMap = new ymaps.Map("map", {
+            center: [55.76, 37.64],
+            zoom: 14,
+            controls:[]                  
+        });        
+        myMap.behaviors.disable('scrollZoom');
+
+		
+
+        var restoraunt1 = new ymaps.Placemark([55.76, 37.64], { 
+        		hintContent: 'Ресторан.', 
+        		balloonContent: 'EXAMPLE ADRESS'
+        	},{           
+            iconLayout: 'default#image',            
+            iconImageHref: '../img/icons/map-marker.svg',            
+            iconImageSize: [50, 50],            
+            iconImageOffset: [-3, -42]
+        });  
+        var restoraunt2 = new ymaps.Placemark([55.755920,37.614943], { 
+        		hintContent: 'Ресторан.', 
+        		balloonContent: 'EXAMPLE ADRESS'
+        	},{           
+            iconLayout: 'default#image',            
+            iconImageHref: '../img/icons/map-marker.svg',           
+            iconImageSize: [50, 50],           
+            iconImageOffset: [-3, -42]
+        });    
+        var restoraunt3 = new ymaps.Placemark([55.756646,37.659017], { 
+        		hintContent: 'Ресторан.', 
+        		balloonContent: 'EXAMPLE ADRESS'
+        	},{           
+            iconLayout: 'default#image',            
+            iconImageHref: '../img/icons/map-marker.svg',            
+            iconImageSize: [50, 50],           
+            iconImageOffset: [-3, -42]
+        });    
+        var restoraunt4 = new ymaps.Placemark([55.761922,37.623912], { 
+        		hintContent: 'Ресторан.', 
+        		balloonContent: 'EXAMPLE ADRESS'
+        	},{      		
+            
+            iconLayout: 'default#image',           
+            iconImageHref: '../img/icons/map-marker.svg',           
+            iconImageSize: [50, 50],            
+            iconImageOffset: [-3, -42]
+        });        	
+        myMap.geoObjects.add(restoraunt1);    
+        myMap.geoObjects.add(restoraunt2);    
+        myMap.geoObjects.add(restoraunt3);    
+        myMap.geoObjects.add(restoraunt4);    
+    }
 
 });
