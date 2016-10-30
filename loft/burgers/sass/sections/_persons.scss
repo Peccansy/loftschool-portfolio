@@ -12,6 +12,7 @@
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-size: cover;	
+	overflow: hidden;
 	&:hover,&:active {
 		.person__item-inner {
 			transform: scale(1);
@@ -26,6 +27,8 @@
 	opacity: 0;
 	transition: .3s;
 	padding: 55px 20px;
+	max-height: 100%;
+    overflow: hidden;
 }
 .person__name {
 	font-family: 'gagalinregular';

@@ -1,103 +1,3 @@
-window.onload = function () {
-	var tiggers,
-	items,
-	parent;	
-	function toggleItem (e) {
-		e.preventDefault();		
-		var clicked = this;		
-
-		items = clicked.closest('.team-accord__list').getElementsByClassName('team-accord__item');
-		parent = clicked.closest('.team-accord__item');	
-
-		if(parent.classList.contains('team-accord__item_open')) { 
-
-			parent.classList.toggle('team-accord__item_open');
-			return	false
-
-		} else {
-			for (var item of items) {
-				if (item.classList.contains('team-accord__item_open')) {
-					item.classList.toggle('team-accord__item_open');
-				}
-			}	
-
-			parent.classList.add('team-accord__item_open');	
-		}		
-
-	}
-	
-	triggers = document.querySelectorAll('.team-accord__trigger');	
-	for(var trigger of triggers) {	
-
-		trigger.addEventListener('click',toggleItem);
-
-	};
-
-	function toggleItem1 (e) {
-		e.preventDefault();		
-		var clicked = this;			
-
-		items = clicked.closest('.menu-accord__list').getElementsByClassName('menu-accord__item');
-		parent = clicked.closest('.menu-accord__item');	
-
-		if(parent.classList.contains('menu-accord__item_open')) { 
-
-			parent.classList.toggle('menu-accord__item_open');
-			return	false
-
-		} else {
-			for (var item of items) {
-				if (item.classList.contains('menu-accord__item_open')) {
-					item.classList.toggle('menu-accord__item_open');
-				}
-			}	
-
-			parent.classList.add('menu-accord__item_open');	
-		}		
-
-	}
-
-	triggers1 = document.querySelectorAll('.menu-accord__trigger');	
-
-	for(var trigger1 of triggers1) {	
-
-		trigger1.addEventListener('click',toggleItem1);
-
-	};
-
-	// // POPUPS
-	// function popUp(e) {
-	// 	e.preventDefault();	 	
-	// 	var btn = this;
-	// 	var popUp = btn.closest('.person__item').querySelector('.person__popup');
-		
-	// 	popUp.classList.toggle('person__popup_open');		
-	// 	close(popUp.querySelector('.person__popup-close'),popUp);
-
-	// }
-
-	// function close(closeItem,container) {		
-	// 	container.addEventListener('click', closeToggle);
-	// 	function closeToggle(e) {
-
-	// 		if(e.target == container || e.target == closeItem) { 
-	// 			container.classList.toggle('person__popup_open');
-	// 			container.removeEventListener('click', closeToggle);
-	// 		} else {return}				
-
-	// 	}
-	// }	
-
-	// var personButtons = document.querySelectorAll('.person__btn');	
-
-	// for (var personButton of personButtons) {
-	// 	personButton.addEventListener('click', popUp);
-	// }
-
-}
-
-
-
 $(function () {
 	var sections = $('.section'),
 		onScreen = $('.content'),		
@@ -143,11 +43,9 @@ $(function () {
 				//вверх	
 				screen = activeSection.prev().index();
 				if(screen == -1) screen = 0;						
-			}	
-			
+			}			
 			scrollSection(screen);
-		}
-		
+		}		
 	});
 
 	$('.page-nav__link, .nav__link').on('click', function(e) {
@@ -160,6 +58,26 @@ $(function () {
 		scrollSection(1);
 	});
 
+	//accordeon
+	var accordOpen = function (container, open) {
+		if(container.hasClass(open)) {
+			container.removeClass(open);
+			return false;
+		}
+		container.siblings().removeClass(open);
+		container.addClass(open);
+	}
+	$('.team-accord__trigger').on('click', function(){
+		var parent = $(this).closest('.team-accord__item');
+		var openClass = 'team-accord__item_open';
+		accordOpen(parent, openClass);
+	});
+
+	$('.menu-accord__trigger').on('click', function(){
+		var parent = $(this).closest('.menu-accord__item');
+		var openClass = 'menu-accord__item_open';
+		accordOpen(parent, openClass);
+	});
 
 	//SLIDER
 	var sliderItems = $('.slider__item'),
@@ -198,6 +116,7 @@ $(function () {
 
 			if(itemIndex >= 0) slide(itemIndex);
 		});
+
 	//popUps
 	$('.person__btn').on('click', function(){
 		var btn = $(this);
@@ -228,17 +147,16 @@ $(function () {
             center: [55.76, 37.64],
             zoom: 14,
             controls:[]                  
-        });        
-        myMap.behaviors.disable('scrollZoom');
-
-		
+        });  
+              
+        myMap.behaviors.disable('scrollZoom');		
 
         var restoraunt1 = new ymaps.Placemark([55.76, 37.64], { 
         		hintContent: 'Ресторан.', 
         		balloonContent: 'EXAMPLE ADRESS'
         	},{           
             iconLayout: 'default#image',            
-            iconImageHref: '../img/icons/map-marker.svg',            
+            iconImageHref: 'img/icons/map-marker.svg',            
             iconImageSize: [50, 50],            
             iconImageOffset: [-3, -42]
         });  
@@ -247,7 +165,7 @@ $(function () {
         		balloonContent: 'EXAMPLE ADRESS'
         	},{           
             iconLayout: 'default#image',            
-            iconImageHref: '../img/icons/map-marker.svg',           
+            iconImageHref: 'img/icons/map-marker.svg',           
             iconImageSize: [50, 50],           
             iconImageOffset: [-3, -42]
         });    
@@ -256,17 +174,16 @@ $(function () {
         		balloonContent: 'EXAMPLE ADRESS'
         	},{           
             iconLayout: 'default#image',            
-            iconImageHref: '../img/icons/map-marker.svg',            
+            iconImageHref: 'img/icons/map-marker.svg',            
             iconImageSize: [50, 50],           
             iconImageOffset: [-3, -42]
         });    
         var restoraunt4 = new ymaps.Placemark([55.761922,37.623912], { 
         		hintContent: 'Ресторан.', 
         		balloonContent: 'EXAMPLE ADRESS'
-        	},{      		
-            
+        	},{           
             iconLayout: 'default#image',           
-            iconImageHref: '../img/icons/map-marker.svg',           
+            iconImageHref: 'img/icons/map-marker.svg',           
             iconImageSize: [50, 50],            
             iconImageOffset: [-3, -42]
         });        	
