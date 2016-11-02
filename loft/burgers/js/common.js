@@ -27,7 +27,7 @@ $(function () {
 		document.querySelector('.wrapper').addEventListener('wheel', function(e) {
 		e.preventDefault();
 
-		if ($('.person__popup').is('.person__popup_open')) { return false } // отключаем прокрутку если открыт попап
+		if ($('.person__popup').is('.person__popup_open')||$('.order__modal').is('.order__modal_open')) return false  // отключаем прокрутку если открыт попап
 
 		activeSection = sections.filter('.section_active');
 		if (!scroll) {
@@ -117,26 +117,48 @@ $(function () {
 			if(itemIndex >= 0) slide(itemIndex);
 		});
 
-	//popUps
-	$('.person__btn').on('click', function(){
+	//popUps	
+	function closePopup(container, closeBtn, itemClass) {
+		$(container).on('click', function(e){			
+   			if (container.has(e.target).length === 0){
+       			container.removeClass(itemClass+'_open');
+       		}
+		});
+		$(closeBtn).on('click', function(){
+			container.removeClass(itemClass+'_open');
+		});
+	}
+	$('.person__btn').on('click', function(){		
 		var btn = $(this);
 		var item = btn.closest('.person__item');
 		var popUp = item.find('.person__popup');
-		var closeIcon =	popUp.find('.person__popup-close');	
+		var closeBtn =	popUp.find('.person__popup-close');	
 		popUp.addClass('person__popup_open');
-		$(popUp).on('click', function(e){			
-   			if (popUp.has(e.target).length === 0){
-       			popUp.removeClass('person__popup_open');
-       		}
-		});
-		$(closeIcon).on('click', function(){
-			popUp.removeClass('person__popup_open');
-		});
+		closePopup(popUp, closeBtn, 'person__popup');
 	});
 
 	//MASk 
 	$('#phone').inputmask("+7 (999) 999-99-99"); 
 
+
+	//MAILER
+	var sendForm = function(){
+		var order = $('.order__form-tag').serialize();		
+		$.ajax({
+			type: 'POST',
+			url: 'order.php',
+			data: order,
+			success: function(data) {
+				$('.order__modal').addClass('order__modal_open');				
+			}
+		})
+		closePopup($('.order__modal'),$('.order__modal_btn'), 'order__modal');
+	}
+	$('.order__form-tag').on('submit', function(e){
+		sendForm();
+		return false;
+	});
+	
 	//YAMAP
 	ymaps.ready(init);
     var myMap,placemark;
