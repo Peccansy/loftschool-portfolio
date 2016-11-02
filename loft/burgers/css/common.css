@@ -785,6 +785,7 @@ ul {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+  overflow: hidden;
 }
 
 .person__item:hover .person__item-inner, .person__item:active .person__item-inner {
@@ -803,6 +804,8 @@ ul {
   opacity: 0;
   transition: .3s;
   padding: 55px 20px;
+  max-height: 100%;
+  overflow: hidden;
 }
 
 .person__name {
