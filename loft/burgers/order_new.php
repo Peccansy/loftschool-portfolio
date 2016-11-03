@@ -12,15 +12,18 @@ $floor = $_POST['floor'];
 $comment = $_POST['comment'];
 $cash = $_POST['payment'];
 $callback = $_POST['callback'];
-//$mail->SMTPDebug = 2;                               // Enable verbose debug output
+//$mail->SMTPDebug = 2;                             // Enable verbose debug output
 
-$mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.timeweb.ru';  					  // Specify main and backup SMTP servers
-$mail->SMTPAuth = true;                               // Enable SMTP authentication
+$mail->isSMTP();                                    // Set mailer to use SMTP
+$mail->Host = 'smtp.timeweb.ru';  					// Specify main and backup SMTP servers
+$mail->SMTPAuth = true;                             // Enable SMTP authentication
 $mail->Username = 'info@nox-wave.ru';              	// SMTP username
 $mail->Password = 'BqCrT7CU';                    	// SMTP password
-$mail->SMTPSecure = 'tsl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 25;                                     // TCP port to connect to
+$mail->SMTPSecure = 'tsl';                          // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 25;                                 	// TCP port to connect to
+
+$Mail->CharSet     = 'UTF-8';
+$Mail->Encoding    = '8bit';
 
 $mail->setFrom('info@nox-wave.ru', 'Форма заказов:');
 $mail->addAddress('Somedecay@yandex.ru', 'Joe User');    // Add a recipient
