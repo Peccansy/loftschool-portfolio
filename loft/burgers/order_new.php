@@ -2,6 +2,9 @@
 require 'vendors/php/phpmailer/PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
+$mail->CharSet     = 'utf-8';
+$mail->Encoding    = '8bit';
+$mail->ContentType = 'text/html; charset=utf-8\r\n';
 $name = $_POST['name'];
 $phone = $_POST['tel'];
 $street = $_POST['street'];
@@ -20,13 +23,12 @@ $mail->SMTPAuth = true;                             // Enable SMTP authenticatio
 $mail->Username = 'info@nox-wave.ru';              	// SMTP username
 $mail->Password = 'BqCrT7CU';                    	// SMTP password
 $mail->SMTPSecure = 'tsl';                          // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 25;                                 	// TCP port to connect to
+$mail->Port = 25;                             	// TCP port to connect to
 
-$Mail->CharSet     = 'UTF-8';
-$Mail->Encoding    = '8bit';
 
-$mail->setFrom('info@nox-wave.ru', 'Форма заказов:');
-$mail->addAddress('Somedecay@yandex.ru', 'Joe User');    // Add a recipient
+
+$mail->setFrom('info@nox-wave.ru', 'Форма заказов');
+$mail->addAddress('gotodno@gmail.com', 'Joe User');    // Add a recipient
 $mail->addReplyTo('info@nox-wave.ru', 'Information');
 $mail->isHTML(true);                                  	 // Set email format to HTML
 
